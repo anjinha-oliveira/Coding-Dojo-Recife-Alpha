@@ -4421,18 +4421,20 @@ input[type=checkbox] {
     width: 100%; 
     opacity:1 ; 
     transition: opacity 1s; 
-    background-image: url('assets/images/Coding-Dojo-Recife-Crab-Animation.gif');
+    /* background-image: url('assets/images/Coding-Dojo-Recife-Crab-Animation.gif'); */
     background-size: 100% 100%;
 
     border: 0.5px;
     border-radius: 0 2rem 2rem 0;
     border-color: rgb(255, 214, 243);
     border-style: solid;
+    margin: 0;
 
 
   }
 
-  body {
+
+body {
 
 
     background-color: rgb(255, 181, 251);

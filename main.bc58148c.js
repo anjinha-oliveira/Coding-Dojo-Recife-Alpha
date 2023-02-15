@@ -179,3 +179,22 @@ function langSelection() {
   //console.log(currentLang);
   
 }
+
+
+
+function configVideoBox(){
+
+    
+  //console.log(document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0]);
+
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].controls = false;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].loop = true;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = true;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
+  
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
+
+}
+ 
