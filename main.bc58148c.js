@@ -186,7 +186,9 @@ function configVideoBox(){
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].controls = false;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].loop = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = true;
+  console.log(document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin);
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
+  console.log(document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin);
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
 
   document.getElementById('doCaosALama').play();

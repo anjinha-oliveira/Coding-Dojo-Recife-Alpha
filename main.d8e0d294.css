@@ -4430,8 +4430,7 @@ input[type=checkbox] {
     --header-border-color: rgba(255, 255, 255, 1);
     --header-border-width: 0.1px;
   }
-
-
+  
   .header-grid {
 
     display: grid;
@@ -4442,9 +4441,24 @@ input[type=checkbox] {
 
     opacity: 0.97;
 
-
-
   }
+
+/* @media(min-width:1200px){
+
+    .header-grid {
+
+        display: grid;
+        width: 100%;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 2fr 0.06fr;
+        padding: 30px;
+    
+        opacity: 0.97;
+    
+      }
+
+    
+} */
 
   .dojo-badge {
 
