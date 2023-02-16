@@ -1,7 +1,50 @@
-
-
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+currentBackgroundIndex = 0;
+const sidewalksList = [['pastilhas.jpg',1800],['rachado.png',2700],['rachado2.jpg',2600]];
+let interval = 3000;
+function sidewalk(){
+
+  if (currentBackgroundIndex < sidewalksList.length){
+
+    interval = sidewalksList[currentBackgroundIndex][1];
+    currentBackgroundIndex += 1;
+    
+  }
+  else{
+    
+    currentBackgroundIndex = 0;
+    interval = 3000;
+  
+  
+  };
+  
+  if (currentBackgroundIndex < sidewalksList.length){
+
+    document.getElementById('sidewalk').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][0] + "')";
+    
+  }
+  
+
+  setTimeout(() => {
+
+    sidewalk();
+
+  }, interval);
+
+}
+
+setTimeout(() => {
+
+  sidewalk();
+
+
+}, 3000);
+
+
 
 function changeIconColor(color){
 
@@ -138,9 +181,27 @@ function configVideoBox(){
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
+
+  document.getElementById('doCaosALama').play();
   
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
+
+}
+
+function playVideo(){
+
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].controls = false;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].loop = true;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = false;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
+
+  document.getElementById('doCaosALama').play();
+  
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
+
 
 }
  

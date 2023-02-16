@@ -3532,7 +3532,7 @@ td.visible-print, th.visible-print {
 
 .social-media-mod:hover{
 
-    color: rgb(55, 55, 56);
+    color: rgb(163, 24, 168);
 
     background-image: linear-gradient(0deg,  transparent ,rgb(238, 238, 250), transparent);
     border-radius: 50%;
@@ -4210,7 +4210,7 @@ footer {
     opacity: 0.7;
 
     border-radius: 3rem 3rem 0 0 ;
-    margin-top: 50px;
+    margin-top: 100px;
 
 }
 
@@ -4221,11 +4221,11 @@ footer {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
-	justify-items: center;
-	align-items: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 
-
-    
+    gap: 2px;
 
 }
 
@@ -4240,6 +4240,19 @@ footer img{
     
 }
 
+
+
+
+
+.box-image{
+	background-image: url(./assets/images/heyclodo-icon.jpg);
+	background-size: cover;
+	position: relative;
+	height: 100px; 
+	width: 100px ;
+    border-radius: 15%;
+}
+
 .box-image:hover:before{
 
 	content: "";
@@ -4251,17 +4264,6 @@ footer img{
     bottom: 0px;
     left: 0px;
     opacity: 1;
-    border-radius: 15%;
-}
-
-
-
-.box-image{
-	background-image: url(./assets/images/heyclodo-icon.jpg);
-	background-size: cover;
-	position: relative;
-	height: 100px; 
-	width: 100px ;
     border-radius: 15%;
 }
 
@@ -4333,40 +4335,42 @@ input[type=checkbox] {
   }
 
   input[type=checkbox]:checked + label:before {
-    transform: translateX(22px);
+    transform: translateX(20px);
 
  
   }
   
   label {
     display: flex;
-    width: 45px;
-    height: 22.5px;
-    border: 4px solid;
+    width: 36px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.63);
     border-radius: 99em;
     position: relative;
     transition: transform 0.75s ease-in-out;
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
+
+    border-width: 0.05px;
+    border-color: #1b181863;
+    border-style: solid;
   }
   label:before {
     transition: transform 0.75s ease;
     content: "";
     display: block;
     position: absolute;
-    width: 12.5px;
-    height: 12.5px;
-    background-color: rgba(255, 255, 255, 1);
+    width: 14px;
+    height: 14px;
+    background-color: rgb(58, 56, 56);
     border-radius: 50%;
-    top: 0.8px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
   }
 
   .langBox{
 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
+
 
 
     display: flex;
@@ -4405,11 +4409,19 @@ input[type=checkbox] {
 
     width: 30vh;
     height: fit-content;
-    background-image: linear-gradient(90deg,transparent, rgba(31, 28, 28, 0.5), transparent);
+    background-image: linear-gradient(90deg,transparent, rgba(241, 230, 230, 0.7), transparent);
 
     border-radius: 20%;
 
+    font-family:'Courier New', Courier, monospace;
+
+    color: rgba(16, 16, 19,0.7);
+    font-weight:600;
+    font-size: 2.5vh;
+
 }
+
+
 
   .toggleBox {
 
@@ -4417,6 +4429,13 @@ input[type=checkbox] {
     flex-direction: row;
     width:auto;
 
+    align-items: center;
+
+  }
+
+  .toggleBox label {
+
+    margin: 0;
 
   }
 
@@ -4486,6 +4505,7 @@ input[type=checkbox] {
 
 
 
+
   }
 
   .lemas {
@@ -4502,10 +4522,12 @@ input[type=checkbox] {
 
   .lema{
 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
-    color: azure;
+    color: rgb(39, 68, 68);
     font-weight: bold;
-    padding: 5px;
+    padding: 0 5px 0 0px;
+    border-radius: 0 10px 10px 0;
 
 
 
@@ -4565,7 +4587,7 @@ input[type=checkbox] {
 
   }
 
-  .sidewalk{
+  #sidewalk{
     
     height: 62vh; 
     width: 100%;
