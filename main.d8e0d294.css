@@ -240,6 +240,7 @@ img {
 .img-responsive {
     display: block;
     max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 0%;
 }
@@ -3788,7 +3789,7 @@ td.visible-print, th.visible-print {
 .card-block{
     position: relative;
 }
-.card-block-B::before{
+.card-block-A::before{
 
     content: "";
     background-size: cover;
@@ -3806,11 +3807,12 @@ td.visible-print, th.visible-print {
 
 }
 
-.card-block-BB::before{
+.card-block-B::before{
 
     content: "";
     background-size: cover;
-    opacity: 0;
+    background-image: url(./assets/images/codando.png);
+    opacity: 1;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -3818,49 +3820,24 @@ td.visible-print, th.visible-print {
     left: 0px;
     opacity: 0.35;
 
-}
+    border-radius: 3rem;
 
+}
 
 .card-block-C::before{
 
     content: "";
-    background-image: url(./assets/images/img-C0.jpg);
     background-size: cover;
-    opacity: 0.2;
+    background-image: url(./assets/images/reflexao.jpg);
+    opacity: 1;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.35;
+    opacity: 0.10;
 
-}
-
-.card-block-D::before{
-
-    content: "";
-    background-size: cover;
-    opacity: 0.2;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.35;
-
-}
-
-.card-block-E::before{
-
-    content: "";
-    background-size: 100% ;
-    opacity: 0.2;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.50;
+    border-radius: 3rem;
 
 }
 
@@ -4443,7 +4420,9 @@ input[type=checkbox] {
 
   .projects-figure {
 
-    height: 27vh;
+    height: 32vh;
+    opacity: 0.8;
+    border-radius: 5%;
 
   }
 
@@ -4461,7 +4440,7 @@ input[type=checkbox] {
     grid-template-columns: 1fr 2fr 0.40fr;
     padding: 30px;
 
-    opacity: 0.9;
+    opacity: 0.97;
 
 
 
@@ -4548,9 +4527,20 @@ input[type=checkbox] {
     padding: 0 5px 0 0px;
     border-radius: 0 10px 10px 0;
 
+  }
 
+  .littleCardTitle{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: fit-content;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 5px 0 0px;
+    border-radius: 0 10px 10px 0;
 
   }
+
 
 
 

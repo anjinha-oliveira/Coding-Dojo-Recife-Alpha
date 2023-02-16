@@ -61,7 +61,7 @@ function changeIconColor(color){
 
 let info1 = "Nomear variáveis de maneira intuitiva.";
 let info2 = "Evite chamar funções para testes em loops."
-let info3 ="Perguntar para aprender, perguntar para ensinar.";
+let info3 ="Nomear funções de forma intuitiva.";
 let info4 = "Percorrer loops somente o necessário.";
 let info1EN = "Name variables intuitively.";
 let info2EN = "Avoid calling functions for testing in loops."
