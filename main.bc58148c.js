@@ -4,13 +4,13 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 currentBackgroundIndex = 0;
-const sidewalksList = [['pastilhas.jpg',1800],['rachado.png',2700],['rachado2.jpg',2600]];
+const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg',2000],['rachado.png','lang-top-background-rachado.jpg','rachado2.jpg',2000]];
 let interval = 3000;
 function sidewalk(){
 
   if (currentBackgroundIndex < sidewalksList.length){
 
-    interval = sidewalksList[currentBackgroundIndex][1];
+    interval = sidewalksList[currentBackgroundIndex][3];
     currentBackgroundIndex += 1;
     
   }
@@ -25,6 +25,13 @@ function sidewalk(){
   if (currentBackgroundIndex < sidewalksList.length){
 
     document.getElementById('sidewalk').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][0] + "')";
+    document.getElementById('langBox').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][1] + "')";
+    document.getElementById('externalLinks').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
+    document.getElementById('footer').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
+
+    document.getElementById('sidewalk').style.backgroundSize = 'cover';
+    document.getElementById('langBox').style.backgroundSize = 'contain';
+    document.getElementById('externalLinks').style.backgroundSize = 'cover'; 
     
   }
   
@@ -33,7 +40,7 @@ function sidewalk(){
 
     sidewalk();
 
-  }, interval);
+  }, 2300);
 
 }
 
@@ -42,7 +49,7 @@ setTimeout(() => {
   sidewalk();
 
 
-}, 3000);
+}, 2500);
 
 
 
@@ -183,25 +190,8 @@ function configVideoBox(){
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
 
   document.getElementById('doCaosALama').play();
-  
+  console.log('play');
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
 
 }
-
-function playVideo(){
-
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].controls = false;
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].loop = true;
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = false;
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
-
-  document.getElementById('doCaosALama').play();
-  
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
-  document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
-
-
-}
- 

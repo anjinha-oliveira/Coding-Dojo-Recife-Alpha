@@ -4390,7 +4390,7 @@ input[type=checkbox] {
 
     background-image: linear-gradient(90deg, rgb(253, 156, 118),rgb(111, 23, 119));
     background-image: url('./assets/images/lang-top-background.png');
-    background-size: contain;
+    background-size:contain;
 
     border-radius: 0 0 5rem 5rem;
 
@@ -4524,7 +4524,7 @@ input[type=checkbox] {
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
-    color: rgb(39, 68, 68);
+    color: rgba(236, 214, 205, 0.7);
     font-weight: bold;
     padding: 0 5px 0 0px;
     border-radius: 0 10px 10px 0;
