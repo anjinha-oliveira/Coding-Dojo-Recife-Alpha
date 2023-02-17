@@ -213,7 +213,6 @@ body {
     line-height: 1.58;
     color: #555;
     background-color: #fff;
-    transition: all 100s;
 }
 
 button, input, select, textarea {
@@ -3648,25 +3647,6 @@ td.visible-print, th.visible-print {
 }
 
 
-
-.flag-img-box{
-    width: 3vw;
-    height: 3vw;
-}
-
-
-@media (max-width:600px) {
-
-    .flag-img-box{
-
-        width: 6vw;
-        height: 6vw;
-
-    }
-
-}
-
-
 body.white {
     background-color: #fff;
     background-image: none;
@@ -3688,29 +3668,7 @@ body.white {
     margin-bottom: 0;
 }
 
-
-.card {
-    border-radius: 3vw;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, .125);
-    margin-bottom: 3vw;   
-    margin-top: 3vw;     
-}
-.card .h2, .card h2 {
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-.card .card-block {
-    padding: 4rem;
-}
-@media (min-width:992px) {
-    .card .card-block {
-    padding: 6rem;
-    
-}
-
-
-}.btn {
+.btn {
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
@@ -3933,14 +3891,17 @@ footer {
 
     opacity: 0.7;
 
-    margin-top: 100px;
-
 }
 
 .footer-flex{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
 }
 
 .footer-box{
@@ -3956,15 +3917,6 @@ footer {
 
     gap: 2px;
 
-}
-
-footer img{
-
-	position: relative;
-	justify-self: center;
-	opacity: 1;
-    margin: 2vw 0 2vw 0;
-    
 }
 
 .box-image{
@@ -4002,10 +3954,42 @@ footer img{
 	color: rgb(56, 48, 45);
 	font-family: papyrus;
     font-style: italic;
-	padding-right: 20px;
+    cursor: default;
+    padding: 20px; 
+    font-size: 2vw;
+
+}
+
+@media(max-width:900px){
+
+    .wikiInfo {
+
+        font-size: 3vw;
+    
+    }
+    
+    
+}
 
 
+@media(max-width:600px){
 
+    .wikiInfo {
+
+        font-size: 4vw;
+    
+    }
+     
+}
+
+@media(max-width:400px){
+
+    .wikiInfo {
+
+        font-size: 5vw;
+    
+    }
+     
 }
 
 .educational{
@@ -4234,33 +4218,6 @@ input[type=checkbox] {
     --header-border-width: 0.0px;
   }
 
-  /* header{
-
-    height: 40vw;
-
-  }
-
-@media(max-width:800px){
-
-    header{
-
-        height: 47vw;
-    
-      }
-
-}
-
-@media(max-width:400px){
-
-    header{
-
-        height: 55vw;
-    
-      }
-
-} */
-
-
   
   .header-grid {
 
@@ -4279,12 +4236,22 @@ input[type=checkbox] {
 
   }
 
+
+  @media(max-width:1280px){
+
+    .header-grid {
+
+        grid-template-columns: 1fr 2fr 0.45fr;
+
+      }
+    
+}
   
   @media(max-width:900px){
 
     .header-grid {
 
-        grid-template-columns: 1fr 2fr 0.29fr;
+        grid-template-columns: 1fr 2fr 0.45fr;
 
       }
     
@@ -4294,7 +4261,7 @@ input[type=checkbox] {
 
     .header-grid {
 
-        grid-template-columns: 1fr 2fr 0.16fr;
+        grid-template-columns: 1fr 2fr 0.45fr;
 
       }
     
@@ -4304,7 +4271,7 @@ input[type=checkbox] {
 
     .header-grid {
 
-        grid-template-columns: 1fr 2fr 0.001fr;
+        grid-template-columns: 1fr 2fr 0.44fr;
 
       }
     
@@ -4522,17 +4489,36 @@ body {
 
     
     background-image: url('./assets/images/Coding-Dojo-Recife-Crab-Animation.gif');
-    background-image: linear-gradient(90deg,transparent, rgb(255, 131, 59),rgba(172, 109, 153, 0.6));
+    background-image: linear-gradient(90deg,transparent, rgba(255, 0, 55, 0.411),rgba(251, 255, 0, 0.473),rgba(92, 11, 221, 0.397), rgba(11, 221, 29, 0.411),transparent);
     background-size: cover;
-
-    border-radius: 5vw ;
-
-    margin-bottom: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-bottom: 0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 
 
 
+
+}
+
+.card {
+
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 3vw;   
+    margin-top: 3vw;     
+}
+.card .h2, .card h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.card .card-block {
+    padding: 4rem;
+}
+@media (min-width:992px) {
+    .card .card-block {
+    padding: 6rem;
+    
+}
 
 }
 
@@ -4597,7 +4583,7 @@ body {
     left: 0px;
     opacity: 0.35;
 
-    border-radius: 3vw;
+
     
 
 }
@@ -4616,7 +4602,7 @@ body {
     left: 0px;
     opacity: 0.35;
 
-    border-radius: 3vw;
+
 
 }
 
@@ -4633,33 +4619,86 @@ body {
     left: 0px;
     opacity: 0.10;
 
-    border-radius: 3vw;
 
 }
+
+
 
 img {
     vertical-align: middle;
 }
+
+footer img{
+
+	position: relative;
+	justify-self: center;
+	opacity: 1;
+    margin: 2vw 0 2vw 0;
+    width:8vw; 
+    height: 10.5vw;
+    
+}
+
+@media(max-width:900px){
+
+    footer img{
+
+        width:15vw; 
+        height: 20vw;
+        
+    }
+
+}
+
+@media(max-width:600px){
+
+    footer img{
+
+        width:25vw; 
+        height: 30vw;
+        
+    }
+
+}
+
+
+
 .img-responsive {
+
     display: block;
     max-width: 100%;
     width: 100%;
-    height: ;
     border-radius: 0%;
-}
-
-.img-boundaries {
-
-    height: 100%;
-    width: 100%;
-    overflow:hidden;
-
 }
 
 .box-figure {
 
-    height: 32vh;
+    height: 18vw;
     opacity: 0.8;
-    border-radius: 5%;
+    border-radius: 0.5vw;
 
   }
+
+  @media(max-width:600px){
+
+    .box-figure {
+
+        height: 40vw;
+        opacity: 0.8;
+        border-radius: 0.5vw;
+    
+      }
+
+}
+
+  @media(max-width:460px){
+
+    .box-figure {
+
+        height: 40vw;
+        opacity: 0.8;
+        border-radius: 0.5vw;
+    
+      }
+
+}
