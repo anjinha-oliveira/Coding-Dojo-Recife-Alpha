@@ -53,9 +53,21 @@ setTimeout(() => {
 
 
 
-function changeIconColor(color){
+// function changeIconColor(color){
 
-  document.getElementById('mainIconPathAttribute').attributes[2].nodeValue = color;
+//   document.getElementById('mainIconPathAttribute').attributes[2].nodeValue = color;
+
+// }
+
+function backgroundOn(){
+
+  document.getElementById('register').style.backgroundColor = 'purple';
+
+}
+
+function backgroundOff(){
+
+  document.getElementById('register').style.backgroundColor = '';
 
 }
 

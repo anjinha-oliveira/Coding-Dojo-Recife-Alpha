@@ -32,20 +32,20 @@
       
       <div id="langBox" class="langBox">
         
-        <audio id="doCaosALama" controls autoplay loop style=" height: 20px; opacity: 0.8;">
-          <!-- <source src="./assets/audio/DaLamaaoCaos.mp3" type="audio/mpeg"> -->
+        <audio id="doCaosALama" controls autoplay loop style="height: 20px; opacity: 0.8;">
+          <source src="./assets/audio/DaLamaaoCaos.mp3" type="audio/mpeg">
         </audio>
         <div class="lang-background-box">  
           
           
-          <div>PT</div>
+          <div class="lang-option">PT</div>
           
           <div class="toggleBox">
             <input type="checkbox" id="toggle" onClick="langSelection()" style="width: 0;"/>
             <label for="toggle"></label>  
           </div>
           
-          <div>EN</div>
+          <div class="lang-option">EN</div>
       
         </div>
 
@@ -59,8 +59,8 @@
       <div class="dojo-badge" >
         
         
-        <div class="dojo-badge-top">
-          <div class="dojo-badge-top-2" >
+        <div class="dojo-badge-grid">
+          <div class="dojo-badge-grid-top" >
             
             <div style="border-width: 0px; border-color: #222; border-style: solid;">
               <img  id="dojo-art" src="./assets/images/dojo-badge.png" width="100%" height="100%">
@@ -69,9 +69,9 @@
             <div class="lemas">
 
               <div class="lema" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">TEST DRIVEN</div>
-              <div class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 10px;">READABLE</div>
-              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 20px;">SCALABLE</div>
-              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 22px;">TROPICAL CODE</div>
+              <div class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 1vw;">READABLE</div>
+              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 2vw;">SCALABLE</div>
+              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 2.2vw;">RESPONSIVE</div>
 
             </div>
 
@@ -80,7 +80,7 @@
           
           <div class="next-event">
                 
-            <div style="font-weight: 700;">Próximo Evento:</div> 
+            <div>Próximo Evento:</div> 
             
             📅 06/12/2022 19h.
             <br>
@@ -88,30 +88,29 @@
             <br>
             Se inscreva:
             
-              <a  onmouseover="{changeIconColor('#a000c8')}" onmouseleave= "{changeIconColor('#ffffff')}" href="https://bitly.com/" title="bitly" >
-                <svg style="transform: translateY(8px);" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" id="iconBitly" height="25" width="25"><title>Bitly</title><path d="M13.055 21.26c-1.345.022-2.325-.41-2.386-1.585-.025-.44-.018-.91.002-1.192.137-1.716 1.333-2.95 2.53-3.19 1.482-.294 2.455.38 2.455 2.31 0 1.303-.36 3.618-2.59 3.657h-.016zM11.923 0C5.32 0 0 5.297 0 12.224c0 3.594 1.92 7.062 4.623 9.147.52.4 1.138.367 1.497.02.297-.285.272-.984-.285-1.475-2.16-1.886-3.652-4.76-3.652-7.635 0-5.15 4.58-9.49 9.74-9.49 6.28 0 9.636 5.102 9.636 9.43 0 2.65-1.29 5.84-3.626 7.874.015 0 .493-.942.493-2.784 0-3.13-1.976-4.836-4.28-4.836-1.663 0-2.667.598-3.34 1.152 0-1.272.045-3.652.045-3.652 0-1.572-.54-2.83-2.47-2.86-1.11-.015-1.932.493-2.44 1.647-.18.436-.12.916.254 1.125.3.18.81.046 1.046-.284.165-.21.254-.254.404-.24.24.03.257.405.257.66.014.193.193 2.903.088 9.865C7.98 21.798 9.493 24 13.1 24c1.56 0 2.756-.435 4.493-1.422C20.243 21.08 24 17.758 24 12.128 23.953 5.045 18.265 0 11.933 0" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+              <a id="register" onmouseover="{backgroundOn()}" onmouseleave= "{backgroundOff()}" href="https://bitly.com/" title="bitly" >
+                <svg style="transform: translateY(0.4vw);" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" id="iconBitly" height="1.4vw" width="1.4vw"><title>Bitly</title><path d="M13.055 21.26c-1.345.022-2.325-.41-2.386-1.585-.025-.44-.018-.91.002-1.192.137-1.716 1.333-2.95 2.53-3.19 1.482-.294 2.455.38 2.455 2.31 0 1.303-.36 3.618-2.59 3.657h-.016zM11.923 0C5.32 0 0 5.297 0 12.224c0 3.594 1.92 7.062 4.623 9.147.52.4 1.138.367 1.497.02.297-.285.272-.984-.285-1.475-2.16-1.886-3.652-4.76-3.652-7.635 0-5.15 4.58-9.49 9.74-9.49 6.28 0 9.636 5.102 9.636 9.43 0 2.65-1.29 5.84-3.626 7.874.015 0 .493-.942.493-2.784 0-3.13-1.976-4.836-4.28-4.836-1.663 0-2.667.598-3.34 1.152 0-1.272.045-3.652.045-3.652 0-1.572-.54-2.83-2.47-2.86-1.11-.015-1.932.493-2.44 1.647-.18.436-.12.916.254 1.125.3.18.81.046 1.046-.284.165-.21.254-.254.404-.24.24.03.257.405.257.66.014.193.193 2.903.088 9.865C7.98 21.798 9.493 24 13.1 24c1.56 0 2.756-.435 4.493-1.422C20.243 21.08 24 17.758 24 12.128 23.953 5.045 18.265 0 11.933 0" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
                 bit.ly/dojorecife5
               </a>
 
-            
-            
           </div>
+
+          <div id="externalLinks" class="externalLinks text-center"> 
+          
+            <a class="fa-icon" href="https://web.telegram.org/" title="">
+              <i class="fa fa-telegram social-media-mod"></i>
+            </a>
+            
+            <a class="fa-icon" href="https://github.com/dojo-recife/dojo" title="" >
+              <i class="fa fa-github social-media-mod"></i>
+            </a>
+  
+            
+          </div>  
           
         </div>
-        
-        <div id="externalLinks" class="externalLinks text-center"> 
-          
-          <a class="fa-icon fa-icon-2x" href="https://web.telegram.org/" title="">
-            <i class="fa fa-telegram social-media-mod"></i>
-          </a>
-          
-          <a class="fa-icon fa-icon-2x " href="https://github.com/dojo-recife/dojo" title="" >
-            <i class="fa fa-github social-media-mod"></i>
-          </a>
 
 
-          
-        </div>  
         
         
       </div>
@@ -145,20 +144,21 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-A" >
               
-              <div class="cardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">EVENTOS</div>
-              <div class="row" >
+              <div class="cardTitle" style="font-size: 15vw;">EVENTOS</div>
+              
+              <div class="row">
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/evento.jpg" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">EVENTOS</div>
+                    <img src="./assets/images/evento.jpg" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle">PRÓXIMOS EVENTOS</div>
 
                 </div>
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/galeria.jpeg" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">GALERIA</div>
+                    <img src="./assets/images/galeria.jpeg" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle" >GALERIA</div>
 
                   
                   
@@ -166,8 +166,8 @@
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/comofunciona.png" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">COMO FUNCIONA</div>
+                    <img src="./assets/images/comofunciona.png" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle" >COMO FUNCIONA</div>
 
                   
                   
@@ -182,20 +182,20 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-B" >
               
-              <div class="cardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">CODANDO</div>
+              <div class="cardTitle" style="font-size: 13vw;">CODING</div>
               <div class="row" >
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/hello.jpeg" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">COMEÇANDO A CODAR</div>
+                    <img src="./assets/images/hello.jpeg" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle" >COMEÇANDO A CODAR</div>
 
                 </div>
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/good-practice.jpg" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">BOAS PRÁTICAS</div>
+                    <img src="./assets/images/good-practice.jpg" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle" >BOAS PRÁTICAS</div>
 
                   
                   
@@ -203,8 +203,8 @@
                 
                 <div class="col-md-4">
 
-                    <img src="./assets/images/matrix.jpg" class="img-responsive projects-figure" alt="">
-                    <div class="littleCardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">TÓPICOS AVANÇADOS</div>
+                    <img src="./assets/images/matrix.jpg" class="img-responsive box-figure" alt="">
+                    <div class="littleCardTitle" >TÓPICOS AVANÇADOS</div>
 
                   
                   
@@ -225,7 +225,7 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-C" >
               
-              <div class="cardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">REFLEXÕES</div>
+              <div class="cardTitle" style="font-size: 11vw;">REFLEXÕES</div>
               <div class="row" >
                 
                 <div style="display: flexbox; flex-direction: column; gap: 10px; border: 0px; border-style: solid; border-color: black; width:100%; height: 100%">
@@ -270,14 +270,14 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-D" >
               
-              <div class="cardTitle" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px; font-size: 10rem;">ORGANIZADORES</div>
+              <div class="cardTitle" style="font-size: 7vw;">ORGANIZADORES</div>
               <div class="row" >
                 
                 <a href="" class="educational">
                   <div class="col-md-4 educational">
                     <div class="">
                       <img src="assets\images\pyladies.png" style="width:20vh; height: 25vh;">
-                      <div id="inst1" style="color:#222">Pyladies</div>
+                      <div class="littleCardTitle">PYLADIES</div>
                       <h3 id="course1" class="h5 date-title"></h3>
                       <small class="date"></small>
                     </div>
@@ -292,7 +292,7 @@
                         <img src="assets\images\pugpe.png" style="width:20vh; height: 25vh;">
                       </div> 
                       
-                      <div style="color:#222">PUG-PE</div>
+                      <div class="littleCardTitle">PUG-PE</div>
                       <h3 id="course2" class="h5 date-title"></h3>
                       <small id="masterTheCodingInt"></small>
                       <small id="masterTheCodingInt" class="date"></small>
@@ -351,15 +351,18 @@
       </a> 
       
 
-      <div class="white-text-container">
-        <a class="fa-icon fa-icon-2x" href="" title="">
-            <i class="fa fa-telegram social-media-mod"></i>
-          </a>
+      <div id="externalLinks-footer" class="externalLinks-footer text-center"> 
           
-          <a class="fa-icon fa-icon-2x " href="https://github.com/dojo-recife/dojo" title="">
-            <i class="fa fa-github social-media-mod"></i>
-          </a>
-      </div>
+        <a class="fa-icon" href="https://web.telegram.org/" title="">
+          <i class="fa fa-telegram social-media-mod"></i>
+        </a>
+        
+        <a class="fa-icon" href="https://github.com/dojo-recife/dojo" title="" >
+          <i class="fa fa-github social-media-mod"></i>
+        </a>
+
+        
+      </div>  
          
 
     </div>
