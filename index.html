@@ -68,17 +68,17 @@
 
             <div class="lemas">
 
-              <div class="lema" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">TEST DRIVEN</div>
-              <div class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 1vw;">READABLE</div>
-              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 2vw;">SCALABLE</div>
-              <div class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 2.2vw;">RESPONSIVE</div>
+              <div id="lema1" class="lema" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">ORIENTADO A TESTE</div>
+              <div id="lema2" class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 1vw;">READABLE</div>
+              <div id="lema3" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 2vw;">SCALABLE</div>
+              <div id="lema4" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 2.2vw;">RESPONSIVE</div>
 
             </div>
 
 
           </div>
           
-          <div class="next-event">
+          <div id="next-event" class="next-event">
                 
             <div>Próximo Evento:</div> 
             
@@ -220,38 +220,40 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-C" >
               
-              <div class="cardTitle" style="font-size: 11vw;">HACKS</div>
+              <div class="cardTitle" style="font-size: 9vw;">HACKS & HINTS</div>
               <div class="row" >
+              
                 
-                <div style="display: flexbox; flex-direction: column; gap: 10px; border: 0px; border-style: solid; border-color: black; width:100%; height: 100%">
                 
-                
-                  <div class="seedsWikiBox" style="border: 0px; border-style: solid; border-color: black; display: grid; align-items: center; justify-items: center; align-content: center; align-items: center;">
+                  <div class="seedsWikiBox">
                     
-                    <img id='seedsArt'src="./assets/images/placeholder.png" width="200px" height="200px">
-                    <div id="wikiInfo" class="wikiInfo"> Nomear variáveis de maneira intuitiva.
+                    <img id='seedsArt'src="./assets/images/wiki1.png" width="100%" height="100%">
+                    <div id="wikiInfo" class="wikiInfo"> Reduza o número de comentários ao dar nomes mais intuitivos às funções e variáveis - código não mente.
                     </div>
                     
                   </div>
                   
-                  <div class="seedsButtons" style="border: 0px; border-style: solid; border-color: black; display:flex; align-items: center; justify-content:center; margin: 20px; gap: 20px;">
+                  <div class="seedsButtonsExternal">
+
+                    <div class="seedsButtons">
                     
-                    <div class="col-md-4" onclick="{previewsWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
+                      <div class="col-md-4" onclick="{previewsWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
+                        
+                        <img src="./assets/images/previews.png" width="40px" height="40px" style="opacity: 0;">
+                        
+                      </div>
                       
-                      <img src="./assets/images/previews.png" width="40px" height="40px">
+                      <div class="col-md-4" onclick="{nextWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
+                        
+                        <img src="./assets/images/next.png" width="40px" height="40px" style="opacity: 0;">
+                        
+                      </div>
                       
-                    </div>
-                    
-                    <div class="col-md-4" onclick="{nextWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
-                      
-                      <img src="./assets/images/next.png" width="40px" height="40px">
-                      
-                    </div>
-                    
-                    
+                      </div>
+
                   </div>
                   
-                </div>
+          
 
               </div>
             </div>

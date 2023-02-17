@@ -3942,18 +3942,37 @@ footer {
     border-radius: 15%;
 }
 
+.educational{
+
+    height: 40vh;
+
+}
+
+.seedsWikiBox{
+
+    height: 50vw;
+    min-height: fit-content;
+    border: 0px; 
+    border-style: solid; 
+    border-color: black; 
+    display: grid; 
+    align-items: center; 
+    justify-items: center; 
+    align-content: center; 
+    align-items: center;
+
+}
 
 .wikiInfo {
 
-	background-image: linear-gradient(90deg,  rgba(200,200,200, 0.05), rgba(200,200,200, 0.4), rgba(200,200,200, 0.5), rgba(200,200,200, 0.4),  rgba(200,200,200, 0.05));
-	border-style: solid;
-	border-width: 1px 0 1px 0;
-	border-color: rgba(255, 238, 233,0.3);
+	background-image: linear-gradient(90deg,  rgba(200,200,200, 0.05), rgba(41, 32, 32, 0.4), rgba(43, 30, 30, 0.5), rgba(31, 22, 22, 0.4),  rgba(26, 23, 23, 0.05));
+
 	cursor: default; 
 	font-weight:normal;
-	color: rgb(56, 48, 45);
-	font-family: papyrus;
+	color: rgba(255, 255, 255, 0.767);
+	font-family: 'Courier New', Courier, monospace;
     font-style: italic;
+    font-weight: 600;
     cursor: default;
     padding: 20px; 
     font-size: 2vw;
@@ -3992,22 +4011,39 @@ footer {
      
 }
 
-.educational{
+.seedsButtonsExternal {
 
-    height: 40vh;
+
+
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+    border-radius: 1vw;
+
+    display:grid;
+    justify-content: center;
+    justify-items: center;
+
+
+
 
 }
 
+.seedsButtons {
 
-.seedsCard {
 
-    height: 80vh;
 
-}
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    border-radius: 1vw;
 
-.seedsWikiBox{
-
-    height: 47vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    background-image: url('./assets/images/sidewalks/wikiButtons.png');
+    background-size: contain;
+     
+    gap: 5vw;
 
 
 }
@@ -4282,7 +4318,7 @@ input[type=checkbox] {
   .dojo-badge-grid-top {
 
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
 
   }
 
@@ -4323,7 +4359,7 @@ input[type=checkbox] {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
     color: rgba(236, 214, 205, 0.7);
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     font-weight: bold;
     padding: 0 1vw 0 0px;
     border-radius: 0 1vw 1vw 0;
@@ -4456,8 +4492,6 @@ input[type=checkbox] {
         grid-template-columns: none;
         grid-template-rows: 1.5fr 1fr 0fr;
 
-
-        
         padding: 0.5vw 0.5vw 0.5vw 0.5vw;
     
         opacity: 0.97;
@@ -4503,8 +4537,7 @@ input[type=checkbox] {
         padding: 0 0 0 10px;
         font-weight: 700;
         font-size: 3vw;
-    
-    
+
       }
 
       .lemas {
@@ -4524,7 +4557,7 @@ input[type=checkbox] {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         height: fit-content;
         color: rgba(236, 214, 205, 0.7);
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: bold;
         padding: 0 1vw 0 0px;
         border-radius: 0 1vw 1vw 0;

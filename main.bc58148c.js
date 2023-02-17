@@ -71,22 +71,17 @@ function backgroundOff(){
 
 }
 
-let info1 = "Nomear variáveis de maneira intuitiva.";
-let info2 = "Evite chamar funções para testes em loops."
-let info3 ="Nomear funções de forma intuitiva.";
-let info4 = "Percorrer loops somente o necessário.";
-let info1EN = "Name variables intuitively.";
-let info2EN = "Avoid calling functions for testing in loops."
-let info3EN ="Naming functions the intuitive way.";
-let info4EN = "Step through loops only as needed.";
-let infoList = [[info1, info1EN], [info2, info2EN], [info3, info3EN], [info4, info4EN]];
+let info1 = "Reduza o número de comentários ao dar nomes mais intuitivos às funções e variáveis - código não mente.";
+let info2 = "Código muito aninhado compromete tanto a facilidade de leitura quanto a eficiência do código em tempo e memória."
+let info1EN = "Reduce the number of comments by giving functions and variables more intuitive names - code doesn't lie.";
+let info2EN = "Code that is too nested compromises both readability and the efficiency of the code in time and memory."
+let infoList = [[info1, info1EN], [info2, info2EN]];
 
-let infoImg1 = './assets/images/placeholder.png';
-let infoImg2 = './assets/images/placeholder.png';
-let infoImg3 = './assets/images/placeholder.png';
-let infoImg4 = './assets/images/placeholder.png';
+let infoImg1 = './assets/images/wiki1.png';
+let infoImg2 = './assets/images/wiki2.png';
 
-let infoImgList = [infoImg1, infoImg2, infoImg3, infoImg4];
+
+let infoImgList = [infoImg1, infoImg2];
 
 let len = infoList.length;
 
@@ -175,12 +170,28 @@ function langSelection() {
 
     document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
 
+    document.getElementById("lema1").textContent = 'TEST DRIVEN';
+    document.getElementById("lema2").textContent = 'READABLE';
+    document.getElementById("lema3").textContent = 'SCALABLE';
+    document.getElementById("lema4").textContent = 'RESPONSIVE';
+    
+    document.getElementById("next-event").textContent = '\n                \n            Next Event: \n            \n            📅 06/12/2022 19h.\n            \n            🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.\n            \n            Register:\n            \n              \n                Bitly\n                bit.ly/dojorecife5\n              \n\n          ';
+
   } else {
     
     currentLang = 'PT';
     currentLangIndex = 0;
 
     document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
+
+    document.getElementById("lema1").textContent = 'ORIENTADO A TESTE';
+    document.getElementById("lema1").style.fontSize = '1.2vw';
+
+    document.getElementById("lema2").textContent = 'LEGÍVEL';
+    document.getElementById("lema3").textContent = 'ESCALONÁVEL';
+    document.getElementById("lema4").textContent = 'RESPONSIVO';
+
+    document.getElementById("next-event").textContent = '\n                \n            Próximo Evento: \n            \n            📅 06/12/2022 19h.\n            \n            🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.\n            \n            Se inscreva:\n            \n              \n                Bitly\n                bit.ly/dojorecife5\n              \n\n          ';
 
   }
 
