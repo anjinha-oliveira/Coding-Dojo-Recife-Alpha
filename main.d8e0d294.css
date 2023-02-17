@@ -4235,6 +4235,37 @@ input[type=checkbox] {
 
   }
 
+  
+  @media(max-width:900px){
+
+    .header-grid {
+
+        grid-template-columns: 1fr 2fr 0.29fr;
+
+      }
+    
+}
+
+  @media(max-width:600px){
+
+    .header-grid {
+
+        grid-template-columns: 1fr 2fr 0.16fr;
+
+      }
+    
+}
+
+@media(max-width:350px){
+
+    .header-grid {
+
+        grid-template-columns: 1fr 2fr 0.001fr;
+
+      }
+    
+}
+
 
 
   .dojo-badge {
