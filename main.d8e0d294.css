@@ -3886,7 +3886,7 @@ label {
 
 footer {
 
-    background-image: url('./assets/images/lang-top-background.png');
+    background-image: url('./assets/images/footer-background.png');
     background-size: cover;
 
     opacity: 0.7;
@@ -3942,120 +3942,32 @@ footer {
     border-radius: 15%;
 }
 
-.educational{
 
-    height: 40vh;
 
-}
+.wikiBox{
 
-.seedsWikiBox{
-
-    height: 50vw;
-    min-height: fit-content;
-    border: 0px; 
-    border-style: solid; 
-    border-color: black; 
-    display: grid; 
-    align-items: center; 
-    justify-items: center; 
-    align-content: center; 
-    align-items: center;
+  height: 32vw;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
 
 }
 
-.wikiInfo {
+.wikiButton {
 
-	background-image: linear-gradient(90deg,  rgba(200,200,200, 0.05), rgba(41, 32, 32, 0.4), rgba(43, 30, 30, 0.5), rgba(31, 22, 22, 0.4),  rgba(26, 23, 23, 0.05));
+  display: grid;
+  align-items: center;
 
-	cursor: default; 
-	font-weight:normal;
-	color: rgba(255, 255, 255, 0.767);
-	font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: 600;
-    cursor: default;
-    padding: 20px; 
-    font-size: 2vw;
-
-}
-
-@media(max-width:900px){
-
-    .wikiInfo {
-
-        font-size: 3vw;
+  background-image: linear-gradient(180deg, transparent, rgba(216, 141, 202, 0.171), transparent);
     
-    }
-    
-    
+
 }
+
 
 
 @media(max-width:600px){
 
-    .wikiInfo {
 
-        font-size: 4vw;
-    
-    }
-     
-}
-
-@media(max-width:400px){
-
-    .wikiInfo {
-
-        font-size: 5vw;
-    
-    }
-     
-}
-
-.seedsButtonsExternal {
-
-
-
-    width: 100%;
-    padding: 5px 15px 5px 15px;
-    border-radius: 1vw;
-
-    display:grid;
-    justify-content: center;
-    justify-items: center;
-
-
-
-
-}
-
-.seedsButtons {
-
-
-
-    width: fit-content;
-    padding: 5px 15px 5px 15px;
-    border-radius: 1vw;
-
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    
-    
-    background-image: url('./assets/images/sidewalks/wikiButtons.png');
-    background-size: contain;
-     
-    gap: 5vw;
-
-
-}
-
-@media(max-width:600px){
-
-    .educational{
-
-        height: 40vh;
-    }
-
-    .seedsWikiBox{
+    .WikiBox{
 
         height: 80vh;
         min-height: 80vh;
@@ -4088,7 +4000,6 @@ input[type=checkbox] {
     width: 36px;
     height: 16px;
     background-color: rgba(255, 250, 250, 0.555);
-    border-radius: 99em;
     position: relative;
     transition: transform 0.75s ease-in-out;
     cursor: pointer;
@@ -4099,14 +4010,14 @@ input[type=checkbox] {
     border-style: solid;
   }
   label:before {
-    transition: transform 0.75s ease;
+    transition: transform 0.4s ease;
     content: "";
     display: block;
     position: absolute;
     width: 14px;
     height: 14px;
     background-color: rgba(39, 36, 36, 0.911);
-    border-radius: 50%;
+
     top: 0px;
     left: 0px;
   }
@@ -4135,17 +4046,16 @@ input[type=checkbox] {
 
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 0.5vw;
     width: 100%;
-    height: 3   vw;
+    height: 5vw;
     justify-content: flex-end;
     align-content: center;
     align-items: center;
     margin: 0px 0px 0px 0px;
-    padding-right: 20px;
-    padding-top: 0px;
+    padding-right: 0.5vw;
 
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: opacity 2.5s; 
 
     background-image: linear-gradient(90deg, rgb(253, 156, 118),rgb(111, 23, 119));
@@ -4213,13 +4123,13 @@ input[type=checkbox] {
     justify-content: center;
 
     width: 9vw;
-    height: 1.5vw;
+    height: 83%;
     background-color: rgba(240, 231, 239, 0.767);
 
     border-style: solid;
     border-color:  rgba(12, 11, 11, 0);
     border-width: 0.1px;
-    border-radius: 2vw;
+
 
     font-family:'Courier New', Courier, monospace;
 
@@ -4323,7 +4233,7 @@ input[type=checkbox] {
   }
 
   
-  .next-event {
+  .next-event-box {
 
     align-self: center;
     color: azure;
@@ -4370,16 +4280,16 @@ input[type=checkbox] {
 
   .externalLinks{
 
-
-
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
 
 
     background-image: linear-gradient(90deg, #381f38, rgba(183, 78, 214, 0.5)); 
-    background-image: url('./assets/images/lang-top-background.png');
+    background-image: url('./assets/images/external-links-background.png');
     background-size: cover;
+
+    opacity: 0.8;
 
   }
 
@@ -4530,7 +4440,7 @@ input[type=checkbox] {
         
     }
 
-    .next-event {
+    .next-event-box {
 
         align-self: center;
         color: azure;
@@ -4621,7 +4531,7 @@ body {
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
-    color: rgba(236, 214, 205, 0.7);
+    color: rgb(235, 24, 218);
     font-weight: bold;
     padding: 0 5vw 0 0vw;
     border-radius: 0 10px 10px 0;
@@ -4705,7 +4615,7 @@ body {
 
     content: "";
     background-size: cover;
-    background-image: url(./assets/images/reflexao.jpg);
+    background-image: url(./assets/images/hints.jpeg);
     opacity: 1;
     position: absolute;
     top: 0px;
@@ -4795,5 +4705,17 @@ footer img{
         border-radius: 0.5vw;
     
       }
+
+}
+
+
+.card {
+    transition: all 3s;
+}
+
+.card *:hover, .footer-flex *:hover {
+
+    
+    transform: scale(1.03);
 
 }

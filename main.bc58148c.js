@@ -5,19 +5,17 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 currentBackgroundIndex = 0;
 const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg',2000],['rachado.png','lang-top-background-rachado.jpg','rachado2.jpg',2000]];
-let interval = 3000;
+
 function sidewalk(){
 
   if (currentBackgroundIndex < sidewalksList.length){
 
-    interval = sidewalksList[currentBackgroundIndex][3];
     currentBackgroundIndex += 1;
     
   }
   else{
     
     currentBackgroundIndex = 0;
-    interval = 3000;
   
   
   };
@@ -40,7 +38,7 @@ function sidewalk(){
 
     sidewalk();
 
-  }, 2300);
+  }, 2500);
 
 }
 
@@ -53,23 +51,49 @@ setTimeout(() => {
 
 
 
-// function changeIconColor(color){
 
-//   document.getElementById('mainIconPathAttribute').attributes[2].nodeValue = color;
 
-// }
 
-function backgroundOn(){
+
+
+
+
+
+
+
+function registerBackgroundOn(){
 
   document.getElementById('register').style.backgroundColor = 'purple';
 
 }
 
-function backgroundOff(){
+function registerBackgroundOff(){
 
   document.getElementById('register').style.backgroundColor = '';
 
 }
+
+function locationBackgroundOn(){
+
+  document.getElementById('event-location').style.backgroundColor = 'purple';
+
+}
+
+function locationBackgroundOff(){
+
+  document.getElementById('event-location').style.backgroundColor = '';
+
+}
+
+
+
+
+
+
+
+
+
+
 
 let info1 = "Reduza o número de comentários ao dar nomes mais intuitivos às funções e variáveis - código não mente.";
 let info2 = "Código muito aninhado compromete tanto a facilidade de leitura quanto a eficiência do código em tempo e memória."
@@ -93,10 +117,12 @@ function nextWikiInfo(){
 
   currentInfoText += 1;
 
+  console.log('test');
+
   if (currentInfoText===(len)){currentInfoText = 0};
 
-  document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
-  document.getElementById('seedsArt').src = infoImgList[currentInfoText];
+
+  document.getElementById('wiki').src = infoImgList[currentInfoText];
 
 }
 
@@ -104,10 +130,11 @@ function previewsWikiInfo(){
 
   currentInfoText -= 1;
 
+  console.log('test');
+
   if (currentInfoText===-1){currentInfoText = (len - 1) };
 
-  document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
-  document.getElementById('seedsArt').src = infoImgList[currentInfoText];
+  document.getElementById('wiki').src = infoImgList[currentInfoText];
   
 
 }
@@ -168,34 +195,76 @@ function langSelection() {
     currentLang = 'EN';
     currentLangIndex = 1;
 
-    document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
 
     document.getElementById("lema1").textContent = 'TEST DRIVEN';
+    if (window.matchMedia("(max-width: 900px)").matches){
+
+      document.getElementById("lema1").style.fontSize = '4vw';
+
+    } else{
+      document.getElementById("lema1").style.fontSize = '1.2vw';
+    }
+
+
     document.getElementById("lema2").textContent = 'READABLE';
     document.getElementById("lema3").textContent = 'SCALABLE';
     document.getElementById("lema4").textContent = 'RESPONSIVE';
     
-    document.getElementById("next-event").textContent = '\n                \n            Next Event: \n            \n            📅 06/12/2022 19h.\n            \n            🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.\n            \n            Register:\n            \n              \n                Bitly\n                bit.ly/dojorecife5\n              \n\n          ';
+    document.getElementById("next-event").textContent = 'Next Event:';
+    document.getElementById("event-time").textContent = '📅 12/06/2022 19h';
+    document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
+    document.getElementById("event-register").textContent = 'Register:';
+
+    document.getElementById("cardEvent").textContent = 'EVENTS';
+
+    document.getElementById("littleCard-next").textContent = 'NEXT EVENTS';
+    document.getElementById("littleCard-galery").textContent = 'GALERY';
+    document.getElementById("littleCard-how").textContent = 'HOW IT WORKS';
+    document.getElementById("littleCard-starting").textContent = 'STARTING TO CODE';
+    document.getElementById("littleCard-good").textContent = 'GOOD PRACTICES';
+    document.getElementById("littleCard-dojo").textContent = 'VIRTUAL DOJO';
+
+    document.getElementById("hacks").textContent = 'HACKS & TIPS';
 
   } else {
     
     currentLang = 'PT';
     currentLangIndex = 0;
 
-    document.getElementsByClassName("wikiInfo")[0].textContent = infoList[currentInfoText][currentLangIndex];
 
     document.getElementById("lema1").textContent = 'ORIENTADO A TESTE';
-    document.getElementById("lema1").style.fontSize = '1.2vw';
+    if (window.matchMedia("(max-width: 900px)").matches){
+
+      document.getElementById("lema1").style.fontSize = '4vw';
+
+    } else{
+      document.getElementById("lema1").style.fontSize = '1.2vw';
+    }
+
 
     document.getElementById("lema2").textContent = 'LEGÍVEL';
     document.getElementById("lema3").textContent = 'ESCALONÁVEL';
     document.getElementById("lema4").textContent = 'RESPONSIVO';
 
-    document.getElementById("next-event").textContent = '\n                \n            Próximo Evento: \n            \n            📅 06/12/2022 19h.\n            \n            🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.\n            \n            Se inscreva:\n            \n              \n                Bitly\n                bit.ly/dojorecife5\n              \n\n          ';
+    document.getElementById("next-event").textContent = 'Próximo Evento:'; 
+    document.getElementById("event-time").textContent = '📅 06/12/2022 19h';
+    document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
+    document.getElementById("event-register").textContent = 'Inscreva-se:';
+
+    document.getElementById("cardEvent").textContent = 'EVENTOS';
+
+    document.getElementById("littleCard-next").textContent = 'PRÓXIMOS EVENTOS';
+    document.getElementById("littleCard-galery").textContent = 'GALERIA';
+    document.getElementById("littleCard-how").textContent = 'COMO FUNCIONA';
+    document.getElementById("littleCard-starting").textContent = 'COMEÇANDO A CODAR';
+    document.getElementById("littleCard-good").textContent = 'BOAS PRÁTICAS';
+    document.getElementById("littleCard-dojo").textContent = 'DOJO VIRTUAL';
+
+    document.getElementById("hacks").textContent = 'HACKS & DICAS';
 
   }
 
-  console.log(currentLang);
+
   
 }
 
@@ -209,13 +278,12 @@ function configVideoBox(){
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].controls = false;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].loop = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = true;
-  console.log(document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin);
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin = 0;
-  console.log(document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].style.margin);
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].play();
+  
 
   document.getElementById('doCaosALama').play();
-  console.log('play');
+  
   document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].disablePictureInPicture = true;
   document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
 

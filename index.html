@@ -32,9 +32,10 @@
       
       <div id="langBox" class="langBox">
         
-        <audio id="doCaosALama" controls autoplay loop style="height: 20px; opacity: 0.8;">
+        <audio id="doCaosALama" controls autoplay loop style="height: 82%; opacity: 0.8; background-color: white;">
           <source src="./assets/audio/DaLamaaoCaos.mp3" type="audio/mpeg">
         </audio>
+        
         <div class="lang-background-box">  
           
           
@@ -69,30 +70,32 @@
             <div class="lemas">
 
               <div id="lema1" class="lema" style="background-image: linear-gradient(90deg, transparent,rgba(237, 241, 239, 0));padding-left: 0px;">ORIENTADO A TESTE</div>
-              <div id="lema2" class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 1vw;">READABLE</div>
-              <div id="lema3" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 2vw;">SCALABLE</div>
-              <div id="lema4" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 2.2vw;">RESPONSIVE</div>
+              <div id="lema2" class="lema" style="background-image: linear-gradient(90deg, transparent, rgba(237, 234, 240, 0)); padding-left: 1vw;">LEGÍVEL</div>
+              <div id="lema3" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(243, 235, 237, 0) ); padding-left: 2vw;">ESCALONÁVEL</div>
+              <div id="lema4" class="lema" style="background-image: linear-gradient(90deg,transparent, rgba(250, 249, 243, 0) ); padding-left: 2.8vw;">RESPONSIVO</div>
 
             </div>
 
 
           </div>
           
-          <div id="next-event" class="next-event">
-                
-            <div>Próximo Evento:</div> 
+          <div class="next-event-box">
             
-            📅 06/12/2022 19h.
-            <br>
-            🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.
-            <br>
-            Se inscreva:
-            
-              <a id="register" onmouseover="{backgroundOn()}" onmouseleave= "{backgroundOff()}" href="https://bitly.com/" title="bitly" >
-                <svg style="transform: translateY(0.4vw);" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" id="iconBitly" height="1.4vw" width="1.4vw"><title>Bitly</title><path d="M13.055 21.26c-1.345.022-2.325-.41-2.386-1.585-.025-.44-.018-.91.002-1.192.137-1.716 1.333-2.95 2.53-3.19 1.482-.294 2.455.38 2.455 2.31 0 1.303-.36 3.618-2.59 3.657h-.016zM11.923 0C5.32 0 0 5.297 0 12.224c0 3.594 1.92 7.062 4.623 9.147.52.4 1.138.367 1.497.02.297-.285.272-.984-.285-1.475-2.16-1.886-3.652-4.76-3.652-7.635 0-5.15 4.58-9.49 9.74-9.49 6.28 0 9.636 5.102 9.636 9.43 0 2.65-1.29 5.84-3.626 7.874.015 0 .493-.942.493-2.784 0-3.13-1.976-4.836-4.28-4.836-1.663 0-2.667.598-3.34 1.152 0-1.272.045-3.652.045-3.652 0-1.572-.54-2.83-2.47-2.86-1.11-.015-1.932.493-2.44 1.647-.18.436-.12.916.254 1.125.3.18.81.046 1.046-.284.165-.21.254-.254.404-.24.24.03.257.405.257.66.014.193.193 2.903.088 9.865C7.98 21.798 9.493 24 13.1 24c1.56 0 2.756-.435 4.493-1.422C20.243 21.08 24 17.758 24 12.128 23.953 5.045 18.265 0 11.933 0" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
-                bit.ly/dojorecife5
-              </a>
+              <div id="next-event">Próximo Evento:</div> 
+             
+              <div id="event-time">📅 06/12/2022 19h.</div>
 
+              <a id="event-location" onmouseover="{locationBackgroundOn()}" onmouseleave= "{locationBackgroundOff()}" href="https://www.google.com.br/maps/place/Labcodes+Software+Studio/@-8.0575521,-34.9013146,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18c300b043fb:0x3ca142c68b54e2ad!8m2!3d-8.0575574!4d-34.8991259!16s%2Fg%2F11b7f0ncxn" title="location">🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.</a>
+              
+
+            <a id="register" onmouseover="{registerBackgroundOn()}" onmouseleave= "{registerBackgroundOff()}" href="https://bitly.com/" title="bitly" >
+              <div  style="display: inline-flex; gap: 1vw;">
+                <div id="event-register">Inscreva-se:</div>
+                <svg style="transform: translateY(0.3vw);" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" id="iconBitly" height="1.4vw" width="1.4vw"><title>Bitly</title><path d="M13.055 21.26c-1.345.022-2.325-.41-2.386-1.585-.025-.44-.018-.91.002-1.192.137-1.716 1.333-2.95 2.53-3.19 1.482-.294 2.455.38 2.455 2.31 0 1.303-.36 3.618-2.59 3.657h-.016zM11.923 0C5.32 0 0 5.297 0 12.224c0 3.594 1.92 7.062 4.623 9.147.52.4 1.138.367 1.497.02.297-.285.272-.984-.285-1.475-2.16-1.886-3.652-4.76-3.652-7.635 0-5.15 4.58-9.49 9.74-9.49 6.28 0 9.636 5.102 9.636 9.43 0 2.65-1.29 5.84-3.626 7.874.015 0 .493-.942.493-2.784 0-3.13-1.976-4.836-4.28-4.836-1.663 0-2.667.598-3.34 1.152 0-1.272.045-3.652.045-3.652 0-1.572-.54-2.83-2.47-2.86-1.11-.015-1.932.493-2.44 1.647-.18.436-.12.916.254 1.125.3.18.81.046 1.046-.284.165-.21.254-.254.404-.24.24.03.257.405.257.66.014.193.193 2.903.088 9.865C7.98 21.798 9.493 24 13.1 24c1.56 0 2.756-.435 4.493-1.422C20.243 21.08 24 17.758 24 12.128 23.953 5.045 18.265 0 11.933 0" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                bit.ly/dojorecife5
+              </div> 
+            </a>
+            
           </div>
 
           <div id="externalLinks" class="externalLinks text-center"> 
@@ -144,21 +147,21 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-A" >
               
-              <div class="cardTitle" style="font-size: 15vw;">EVENTOS</div>
+              <div id="cardEvent" class="cardTitle" style="font-size: 15vw;">EVENTOS</div>
               
               <div class="row">
                 
                 <div class="col-md-4">
 
                     <img src="./assets/images/evento.jpg" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle">PRÓXIMOS EVENTOS</div>
+                    <div id="littleCard-next" class="littleCardTitle">PRÓXIMOS EVENTOS</div>
 
                 </div>
                 
                 <div class="col-md-4">
 
                     <img src="./assets/images/galeria.jpeg" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle" >GALERIA</div>
+                    <div id="littleCard-galery" class="littleCardTitle" >GALERIA</div>
 
                   
                   
@@ -167,7 +170,7 @@
                 <div class="col-md-4">
 
                     <img src="./assets/images/comofunciona.png" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle" >COMO FUNCIONA</div>
+                    <div id="littleCard-how" class="littleCardTitle" >COMO FUNCIONA</div>
 
                   
                   
@@ -188,21 +191,21 @@
                 <div class="col-md-4">
 
                     <img src="./assets/images/hello.jpeg" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle" >COMEÇANDO A CODAR</div>
+                    <div id="littleCard-starting" class="littleCardTitle" >COMEÇANDO A CODAR</div>
 
                 </div>
                 
                 <div class="col-md-4">
 
                     <img src="./assets/images/good-practice.jpg" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle" >BOAS PRÁTICAS</div>
+                    <div id="littleCard-good" class="littleCardTitle" >BOAS PRÁTICAS</div>
 
                 </div>
                 
                 <div class="col-md-4">
 
                     <img src="./assets/images/matrix.jpg" class="img-responsive box-figure" alt="">
-                    <div class="littleCardTitle" >DOJO VIRTUAL</div>
+                    <div id="littleCard-dojo" class="littleCardTitle" >DOJO VIRTUAL</div>
 
                 </div>
 
@@ -220,42 +223,16 @@
           <div id="projetos" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
             <div class="card-block card-block-C" >
               
-              <div class="cardTitle" style="font-size: 9vw;">HACKS & HINTS</div>
-              <div class="row" >
-              
-                
-                
-                  <div class="seedsWikiBox">
+              <div id="hacks" class="cardTitle" style="font-size: 9vw;">HACKS & DICAS</div>
+
+                  <div  class="wikiBox">
                     
-                    <img id='seedsArt'src="./assets/images/wiki1.png" width="100%" height="100%">
-                    <div id="wikiInfo" class="wikiInfo"> Reduza o número de comentários ao dar nomes mais intuitivos às funções e variáveis - código não mente.
-                    </div>
+                    <div onclick="{previewsWikiInfo()}" class="wikiButton"> <img class="img-responsive box-figure" style="height: 10vw; width: 10vw;" alt="" src="./assets/images/previews.png"> </div>
+                    <img style="z-index: 1; opacity: 0.9;" id='wiki'src="./assets/images/wiki1.png" width="100%" height="100%">
+                    <div onclick="{nextWikiInfo()}" class="wikiButton"> <img class="img-responsive box-figure" style="height: 10vw; width: 10vw;"  alt="" src="./assets/images/next.png"> </div>
                     
                   </div>
-                  
-                  <div class="seedsButtonsExternal">
 
-                    <div class="seedsButtons">
-                    
-                      <div class="col-md-4" onclick="{previewsWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
-                        
-                        <img src="./assets/images/previews.png" width="40px" height="40px" style="opacity: 0;">
-                        
-                      </div>
-                      
-                      <div class="col-md-4" onclick="{nextWikiInfo()}" style="cursor:pointer; width: 40px; height: 40px; padding: 0">
-                        
-                        <img src="./assets/images/next.png" width="40px" height="40px" style="opacity: 0;">
-                        
-                      </div>
-                      
-                      </div>
-
-                  </div>
-                  
-          
-
-              </div>
             </div>
           </div>
 
