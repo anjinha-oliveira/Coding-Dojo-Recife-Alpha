@@ -2,9 +2,26 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
+setTimeout(() => {
+
+  document.getElementsByTagName('body')[0].style.transition ='all 4s';
+  document.getElementsByTagName('body')[0].style.opacity = 1;
+
+  setTimeout(() => {
+
+    document.getElementsByTagName('body')[0].style.transition ='all 0s';
+    
+  }, 5000);
+  
+}, 100);
+
+
+
+
+
 
 currentBackgroundIndex = 0;
-const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg',2000],['rachado.png','lang-top-background-rachado.jpg','rachado2.jpg',2000]];
+const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg', 'rgba(69, 52, 97, 1)'],['rachado.png','lang-top-background-rachado.jpg','rachado2.jpg','rgba(255,255,255,0.7)']];
 
 function sidewalk(){
 
@@ -23,6 +40,8 @@ function sidewalk(){
   if (currentBackgroundIndex < sidewalksList.length){
 
     document.getElementById('sidewalk').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][0] + "')";
+    document.getElementById('sidewalk').style.color = sidewalksList[currentBackgroundIndex][3];
+
     document.getElementById('langBox').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][1] + "')";
     document.getElementById('externalLinks').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
     document.getElementById('footer').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
