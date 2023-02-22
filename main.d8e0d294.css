@@ -4028,6 +4028,8 @@ input[type=checkbox] {
     justify-content: center;
     align-items: center;
     column-gap: 5px;
+
+
 }
 
 @media (max-width:600px) {
@@ -4080,7 +4082,7 @@ input[type=checkbox] {
     
     .langBox{
 
-        height: 4vw;
+        height: 6vw;
 
     }
 
@@ -4114,7 +4116,41 @@ input[type=checkbox] {
     align-content: center;
     align-content: center;
 
+    font-size: 1.3vw;
+
   }
+
+@media (max-width:900px) {
+
+    .lang-option {
+
+        display: grid;
+        align-content: center;
+        align-content: center;
+
+        font-size: 3vw;
+    
+      }
+
+
+    
+    
+}
+
+@media (max-width:500px) {
+
+    .lang-option {
+
+        display: grid;
+        align-content: center;
+        align-content: center;
+
+        font-size: 4vw;
+    
+      }
+    
+    
+}
 
   .lang-background-box{
 
@@ -4122,7 +4158,7 @@ input[type=checkbox] {
     gap: 5px;
     justify-content: center;
 
-    width: 9vw;
+    width: fit-content;
     height: 83%;
     background-color: rgba(240, 231, 239, 0.767);
 
@@ -4393,6 +4429,8 @@ input[type=checkbox] {
 
   }
 
+  
+
   .topText{
 
     color: transparent;
@@ -4410,10 +4448,6 @@ input[type=checkbox] {
     align-items: center;
 
     background-image: linear-gradient(90deg,transparent, rgba(70, 70, 70, 0.511),rgba(70, 70, 70, 0.511), transparent); 
-
-
-
-
 
   }
 
@@ -4438,6 +4472,32 @@ input[type=checkbox] {
 
   }
 
+  @media(max-width:1200px){
+
+    .topText{
+
+
+        font-size: 4vw;
+        font-weight: 700;
+        margin: 0 2.4vw 0 2vw;
+        padding: 0.65vw 0 0.2vw 0;
+      }
+
+  }
+
+  @media(max-width:1100px){
+
+    .topText{
+
+
+        font-size: 3.5vw;
+        font-weight: 700;
+        margin: 0 2.4vw 0 2vw;
+        padding: 0.4vw 0 0.1vw 0;
+      }
+
+  }
+
 
   @media(max-width:900px){
 
@@ -4446,9 +4506,9 @@ input[type=checkbox] {
 
         display: grid;
         width: 100%;
-        grid-gap: 1vw;
+        grid-gap: 0.5vw;
         grid-template-columns: none;
-        grid-template-rows: 1.5fr 1fr 0fr;
+        grid-template-rows: 1.5fr 0.8fr 0fr;
 
         padding: 0.5vw 0.5vw 0.5vw 0.5vw;
     
@@ -4461,6 +4521,8 @@ input[type=checkbox] {
         #sidewalk {
 
         height: 0vw;
+        margin: 0;
+        padding: 0;
     
       }
 
@@ -4521,11 +4583,40 @@ input[type=checkbox] {
         border-radius: 0 1vw 1vw 0;
     
       }
+
+      .topText{
+
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    
+      }
+
+
+      #sidewalkText{
+
+        font-size: 0;
+        width: 0;
+
+    
+      }
+    
     
 
       
 }
 
+
+.header-body-frontier {
+
+    content: '';
+    opacity: 0.8;
+    height:12vw;
+    margin: 0vw 0.5vw 0.5vw 0.5vw;
+    background-size: cover;
+    background-image: url('./assets/images/sidewalks/down-calcada.png');
+
+}
 
 body {
 
@@ -4599,6 +4690,15 @@ body {
 
   }
 
+  .littleCard{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
   .littleCardTitle{
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -4619,7 +4719,8 @@ body {
 
     .littleCardTitle{
 
-        font-size: 3vw;
+        font-size: 6vw;
+        margin-bottom: 4vw;
     
       }
 
@@ -4741,6 +4842,30 @@ footer img{
     max-width: 100%;
     width: 100%;
     border-radius: 0%;
+
+}
+
+@media(min-width:578px) and (max-width:1000px){
+
+    .img-responsive {
+
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0%;
+
+
+    }
+    
+
+}
+
+.img-responsive-howItWorks {
+
+    display: block;
+    max-width: 100%;
+    width: 75%;
+    border-radius: 0%;
 }
 
 .box-figure {
@@ -4751,7 +4876,23 @@ footer img{
 
   }
 
-  @media(max-width:600px){
+  @media (min-width:558px) and (max-width:985px){
+
+    .box-figure {
+
+        height: 50vw;
+        opacity: 0.8;
+        border-radius: 0.5vw;
+    
+      }
+
+
+
+
+
+}
+
+  @media(max-width:558px){
 
     .box-figure {
 
