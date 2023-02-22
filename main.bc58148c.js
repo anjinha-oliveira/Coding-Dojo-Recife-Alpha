@@ -20,8 +20,38 @@ setTimeout(() => {
 
 
 
+
+
+function expandSubject(card, subject){
+
+  document.getElementById(card).style.transition = 'opacity 1s';
+  document.getElementById(card).style.opacity = 0;
+  document.getElementById(subject).hidden = true;
+  
+  setTimeout(() => {
+    
+    document.getElementById(card).hidden = true;
+    document.getElementById(subject).hidden = false;
+    document.getElementById(subject).style.opacity = 1;
+
+  }, 1000); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 currentBackgroundIndex = 0;
-const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg', 'rgba(69, 52, 97, 1)'],['rachado.png','lang-top-background-rachado.jpg','rachado2.jpg','rgba(255,255,255,0.7)']];
+const sidewalksList = [['pastilhas.jpg','lang-top-background.png','lang-calcada.jpg', 'down-calcada.png', 'rgba(255, 255, 255, 0.811)', 'linear-gradient(90deg,transparent, rgba(70, 70, 70, 0.311),rgba(70, 70, 70, 0.311), transparent)'],['rachado.png','lang-top-background-rachado.png','rachado2.jpg', 'down-rachado.png','rgba(255,255,255,0.8)', 'linear-gradient(90deg,transparent, rgba(70, 70, 70, 0.211),rgba(70, 70, 70, 0.211), transparent)'], ['manguezal2.png','manguezal1.png','manguezal.jpg', 'manguezal3.png','rgba(255,255,255,0.8)', 'linear-gradient(90deg,transparent, rgba(70, 70, 70, 0.211),rgba(70, 70, 70, 0.211), transparent)']];
 
 function sidewalk(){
 
@@ -40,11 +70,18 @@ function sidewalk(){
   if (currentBackgroundIndex < sidewalksList.length){
 
     document.getElementById('sidewalk').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][0] + "')";
-    document.getElementById('sidewalk').style.color = sidewalksList[currentBackgroundIndex][3];
+    document.getElementById('sidewalk').style.color = sidewalksList[currentBackgroundIndex][4];
+    document.getElementById('sidewalkText').style.backgroundImage = sidewalksList[currentBackgroundIndex][5];
+    document.getElementById('topText').style.color = sidewalksList[currentBackgroundIndex][4];
+    document.getElementById('topText').style.backgroundImage = sidewalksList[currentBackgroundIndex][5];
+
+
+   
 
     document.getElementById('langBox').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][1] + "')";
     document.getElementById('externalLinks').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
     document.getElementById('footer').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
+    document.getElementById('header-body-frontier').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][3] + "')";
 
     document.getElementById('sidewalk').style.backgroundSize = 'cover';
     document.getElementById('langBox').style.backgroundSize = 'contain';
@@ -215,29 +252,29 @@ function langSelection() {
     currentLangIndex = 1;
 
 
-    document.getElementById("lema1").textContent = 'TEST DRIVEN';
-    if (window.matchMedia("(max-width: 900px)").matches){
+    // document.getElementById("lema1").textContent = 'TEST DRIVEN';
+    // if (window.matchMedia("(max-width: 900px)").matches){
 
-      document.getElementById("lema1").style.fontSize = '4vw';
+    //   document.getElementById("lema1").style.fontSize = '4vw';
 
-    } else{
-      document.getElementById("lema1").style.fontSize = '1.2vw';
-    }
+    // } else{
+    //   document.getElementById("lema1").style.fontSize = '1.2vw';
+    // }
 
 
-    document.getElementById("lema2").textContent = 'READABLE';
-    document.getElementById("lema3").textContent = 'SCALABLE';
-    document.getElementById("lema4").textContent = 'RESPONSIVE';
+    // document.getElementById("lema2").textContent = 'READABLE';
+    // document.getElementById("lema3").textContent = 'SCALABLE';
+    // document.getElementById("lema4").textContent = 'RESPONSIVE';
     
-    document.getElementById("next-event").textContent = 'Next Event:';
+    document.getElementById("next-event").textContent = 'Next Event(#122):';
     document.getElementById("event-time").textContent = '📅 12/06/2022 19h';
     document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
     document.getElementById("event-register").textContent = 'Register:';
 
-    document.getElementById("cardEvent").textContent = 'EVENTS';
+    document.getElementById("next-events").textContent = 'EVENTS';
 
     document.getElementById("littleCard-next").textContent = 'NEXT EVENTS';
-    document.getElementById("littleCard-galery").textContent = 'GALERY';
+    document.getElementById("littleCard-gallery").textContent = 'GALLERY';
     document.getElementById("littleCard-how").textContent = 'HOW IT WORKS';
     document.getElementById("littleCard-starting").textContent = 'STARTING TO CODE';
     document.getElementById("littleCard-good").textContent = 'GOOD PRACTICES';
@@ -251,29 +288,29 @@ function langSelection() {
     currentLangIndex = 0;
 
 
-    document.getElementById("lema1").textContent = 'ORIENTADO A TESTE';
-    if (window.matchMedia("(max-width: 900px)").matches){
+    // document.getElementById("lema1").textContent = 'ORIENTADO A TESTE';
+    // if (window.matchMedia("(max-width: 900px)").matches){
 
-      document.getElementById("lema1").style.fontSize = '4vw';
+    //   document.getElementById("lema1").style.fontSize = '4vw';
 
-    } else{
-      document.getElementById("lema1").style.fontSize = '1.2vw';
-    }
+    // } else{
+    //   document.getElementById("lema1").style.fontSize = '1.2vw';
+    // }
 
 
-    document.getElementById("lema2").textContent = 'LEGÍVEL';
-    document.getElementById("lema3").textContent = 'ESCALONÁVEL';
-    document.getElementById("lema4").textContent = 'RESPONSIVO';
+    // document.getElementById("lema2").textContent = 'LEGÍVEL';
+    // document.getElementById("lema3").textContent = 'ESCALONÁVEL';
+    // document.getElementById("lema4").textContent = 'RESPONSIVO';
 
-    document.getElementById("next-event").textContent = 'Próximo Evento:'; 
+    document.getElementById("next-event").textContent = 'Próximo Evento(#122):'; 
     document.getElementById("event-time").textContent = '📅 06/12/2022 19h';
     document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
     document.getElementById("event-register").textContent = 'Inscreva-se:';
 
-    document.getElementById("cardEvent").textContent = 'EVENTOS';
+    document.getElementById("next-events").textContent = 'EVENTOS';
 
     document.getElementById("littleCard-next").textContent = 'PRÓXIMOS EVENTOS';
-    document.getElementById("littleCard-galery").textContent = 'GALERIA';
+    document.getElementById("littleCard-gallery").textContent = 'GALERIA';
     document.getElementById("littleCard-how").textContent = 'COMO FUNCIONA';
     document.getElementById("littleCard-starting").textContent = 'COMEÇANDO A CODAR';
     document.getElementById("littleCard-good").textContent = 'BOAS PRÁTICAS';

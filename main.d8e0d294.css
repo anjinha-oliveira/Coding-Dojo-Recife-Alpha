@@ -4244,7 +4244,24 @@ input[type=checkbox] {
     font-size: 1.1vw;
 
 
+
   }
+
+  .next-event-box-card {
+
+    align-self: center;
+    color: azure;
+    padding: 0 0 0 10px;
+    font-weight: 700;
+    font-size: 1.3vw;
+
+    margin: 0 0 2vw 0;
+    width: fit-content;
+
+    background-color: rgba(158, 25, 87, 0.6);
+
+  }
+
 
   #dojo-art {
 
@@ -4376,6 +4393,30 @@ input[type=checkbox] {
 
   }
 
+  .topText{
+
+    color: transparent;
+    font-size: 5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+    margin: 0 2.4vw 0 2vw;
+    padding: 0.65vw 0 0.2vw 0;
+
+    height: 100%;
+
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(90deg,transparent, rgba(70, 70, 70, 0.511),rgba(70, 70, 70, 0.511), transparent); 
+
+
+
+
+
+  }
+
   #sidewalk{
     
     height: 32vw; 
@@ -4383,15 +4424,14 @@ input[type=checkbox] {
     background-image: url('./assets/images/right-border-background.jpg');
     background-size: contain;
 
-
     opacity: 0.8;
 
     border-style:solid;
     border-width: var(--header-border-width) var(--header-border-width) var(--header-border-width) 0px;
     border-color: var(--header-border-color);
 
-    color: rgba(69, 52, 97,0.7);
-    font-size: 5vw;
+    color: transparent;
+    font-size: 3.4vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 700;
     text-align: center;
@@ -4547,6 +4587,18 @@ body {
 
   }
 
+  .pointer {
+
+    cursor:pointer;
+
+  }
+
+  .location1:hover, .register1:hover{
+
+    background-color: purple;
+
+  }
+
   .littleCardTitle{
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -4559,7 +4611,7 @@ body {
     border-radius: 0 10px 10px 0;
     text-align: center;
 
-    cursor:default;
+
 
   }
 
@@ -4587,6 +4639,8 @@ body {
  .card-block{
     position: relative;
 }
+
+
 
 .card-block-A::before{
 
@@ -4693,7 +4747,7 @@ footer img{
 
     height: 18vw;
     opacity: 0.8;
-    border-radius: 0.5vw;
+    border-radius: 0vw;
 
   }
 
@@ -4726,9 +4780,41 @@ footer img{
     transition: all 3s;
 }
 
-.card *:hover, .footer-flex *:hover {
+.card .box-figure:hover, .footer-flex *:hover {
 
-    
     transform: scale(1.03);
 
 }
+
+.gallery{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+
+}
+
+.img-scale{
+
+    opacity: 0.7;
+    transform: scale(1);
+    transition: all 2.5s;
+
+}
+
+
+.img-scale:hover{
+
+    transform: scale(1.7);
+    width: 100%;
+    opacity: 1;
+    z-index: 100;
+
+}
+
+.howItWorks {
+
+    position: relative;
+    z-index: 100;
+}
+
