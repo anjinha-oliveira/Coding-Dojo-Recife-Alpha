@@ -5087,7 +5087,7 @@ footer img{
 
     .img-scale{
 
-        opacity: 0.7;
+        opacity: 1;
         transform: scale(1);
         transition: all 2.5s;
     
