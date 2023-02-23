@@ -3952,6 +3952,43 @@ footer {
 
 }
 
+.wikiBox-alt-buttons{
+
+    height: 0vw;
+    width: 0vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20vw;
+  
+  }
+
+@media(max-width:1000px){
+
+    .wikiBox{
+
+        height: 38vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0fr 6fr 0fr;
+       
+    }
+
+    .wikiBox-alt-buttons{
+
+        height: 12vw;
+        width: 100%;
+        margin: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+        justify-content: center;
+        justify-items: center;
+      
+    }
+
+
+}
+
 .wikiButton {
 
   display: grid;
