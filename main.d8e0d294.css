@@ -3920,7 +3920,7 @@ footer {
 }
 
 .box-image{
-	background-image: url(./assets/images/heyclodo-icon.jpg);
+	background-image: url(./assets/images/coding-dojo.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100px; 
@@ -3931,7 +3931,7 @@ footer {
 .box-image:hover:before{
 
 	content: "";
-    background-image: url(./assets/images/heyclodo-icon-gray-inverted.jpg);
+    background-image: url(./assets/images/coding-dojo-modded.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -4359,7 +4359,7 @@ input[type=checkbox] {
 
   #dojo-art {
 
-    border-radius: 10%;
+    border-radius: 0.2vw;
     padding: 5px;
     opacity: 0.8;
 

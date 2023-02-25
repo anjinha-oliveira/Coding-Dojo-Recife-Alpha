@@ -288,7 +288,7 @@ function langSelection() {
     // document.getElementById("lema3").textContent = 'SCALABLE';
     // document.getElementById("lema4").textContent = 'RESPONSIVE';
     
-    document.getElementById("next-event").textContent = 'Next Event(#122):';
+    document.getElementById("next-event").textContent = 'Next Event(#6):';
     document.getElementById("event-time").textContent = '📅 12/06/2022 19h';
     document.getElementById("event-location").textContent = '🗺️ Empresarial Charles Darwin, R. Sen. José Henrique, 231 - Ilha do Leite, Recife - PE, 50070-460.';
     document.getElementById("event-register").textContent = 'Register:';
@@ -324,7 +324,7 @@ function langSelection() {
     // document.getElementById("lema3").textContent = 'ESCALONÁVEL';
     // document.getElementById("lema4").textContent = 'RESPONSIVO';
 
-    document.getElementById("next-event").textContent = 'Próximo Evento(#122):'; 
+    document.getElementById("next-event").textContent = 'Próximo Evento(#6):'; 
     document.getElementById("event-time").textContent = '📅 06/12/2022 19h';
     document.getElementById("event-location").textContent = '🗺️ Empresarial Charles Darwin, R. Sen. José Henrique, 231 - Ilha do Leite, Recife - PE, 50070-460.';
     document.getElementById("event-register").textContent = 'Inscreva-se:';
@@ -366,3 +366,12 @@ function configVideoBox(){
   document.getElementById('video').contentWindow.document.getElementsByTagName("video").media.disablePictureInPicture = true;
 
 }
+
+
+
+
+
+
+function moddedLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge-alt.png";}
+
+function normalLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge.png";}
