@@ -167,7 +167,7 @@
                       <div onclick="{expandSubject('events-block', 'howItWorks-subject')}" class="col-md-4 littleCard pointer">
                         
                         <img src="./assets/images/comofunciona.png" class="img-responsive box-figure" alt="">
-                        <div id="littleCard-next" class="littleCardTitle">COMO FUNCIONA</div>
+                        <div id="littleCard-next" autoplay="true" class="littleCardTitle">COMO FUNCIONA</div>
                         
                       </div>
                       
@@ -280,9 +280,10 @@
                       
                     </div>
                     
-                    <div class="howItWorks">
+                    <div onclick="howItWorksVideo()" class="howItWorks">
                       
-                      <img src="./assets/images/comofunciona.png" class="img-responsive-howItWorks" alt="">
+                      <!-- <img src="./assets/images/comofunciona.png" class="img-responsive-howItWorks" alt=""> -->
+                      <video id="howItWorks-video" loop src="./assets/videos/howItWorks.mp4" class="img-responsive-howItWorks"  alt="">
                       
                     </div>
                     

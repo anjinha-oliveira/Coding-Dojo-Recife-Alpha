@@ -1,6 +1,26 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+let howItWorksVideoState = 0;
+function howItWorksVideo(){
+
+  if (howItWorksVideoState === 0){
+
+    document.getElementById('doCaosALama').pause();
+    document.getElementById('howItWorks-video').play();
+    howItWorksVideoState = 1;
+
+  }
+  else{
+
+    document.getElementById('howItWorks-video').pause();
+    howItWorksVideoState = 0;
+    
+
+  }
+
+}
+  
 
 setTimeout(() => {
 
@@ -14,13 +34,6 @@ setTimeout(() => {
   }, 5000);
   
 }, 100);
-
-
-
-
-
-
-
 
 function expandSubject(card, subject){
 
