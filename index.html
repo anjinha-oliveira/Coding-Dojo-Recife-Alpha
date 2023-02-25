@@ -176,7 +176,7 @@
                     
                   </div>
                   
-                  <div hidden=true id="events-subject" class="subject" style="opacity: 0;">
+                  <div hidden id="events-subject" class="subject" style="opacity: 0;">
                     
                     <div class="expanded-card-nav">
                       
@@ -280,38 +280,118 @@
                 
                 
               </div>
-              
-              
-              <div id="" class="card" style="opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
-                <div class="card-block card-block-B" >
+
+
+
+
+
+
+
+
+
+
+
+              <div id="coding" class="card" style="min-height: 10; opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
+                <div class="card-block card-block-B" style="min-height: 60vw;">
                   
-                  <div class="cardTitle" style="font-size: 13vw;">CODING</div>
-                  <div class="row" >
+                  <div id="coding-block" class="events-block">
                     
-                    <div class="col-md-4 littleCard pointer">
+                    <div id="coding-stuff" class="cardTitle" style="font-size: 15vw;">CONDING</div>
+                    
+                    <div id="events-row" class="row">
                       
-                      <img src="./assets/images/hello.jpeg" class="img-responsive box-figure" alt="">
-                      <div id="littleCard-starting" class="littleCardTitle" >COMEÇANDO A CODAR</div>
+                      <div onclick="{expandSubject('coding-block', 'startingCoding-subject')}" class="col-md-4 littleCard pointer">
+                        
+                        <img src="./assets/images/hello.jpeg" class="img-responsive box-figure" alt="">
+                        <div id="littleCard-startingCoding" class="littleCardTitle">COMEÇANDO A CODAR</div>
+                        
+                      </div>
+                      
+                      <div onclick="{expandSubject('coding-block', 'goodPractice-subject')}" class="col-md-4 littleCard pointer">
+                        
+                        <img src="./assets/images/good-practice.jpg" class="img-responsive box-figure" alt="">
+                        <div id="littleCard-goodPractice" class="littleCardTitle">BOAS PRÁTICAS</div>
+                        
+                      </div>
+                      
                       
                     </div>
                     
-                    <div class="col-md-4 littleCard  pointer">
+                  </div>
+                  
+
+
+                  <div hidden id="startingCoding-subject" class="subject" style="opacity: 0;">
+                    
+                    <div class="expanded-card-nav">
                       
-                      <img src="./assets/images/good-practice.jpg" class="img-responsive box-figure" alt="">
-                      <div id="littleCard-good" class="littleCardTitle" >BOAS PRÁTICAS</div>
+                      <div id="" class="cardTitle-expanded" >COMEÇANDO A CODAR</div>
+                      <img onclick="{expandSubject('startingCoding-subject', 'coding-block')}" class="img-responsive box-figure pointer" style="height: 10vw; width: 10vw;" alt="" src="./assets/images/previews.png">
                       
                     </div>
                     
-                    <!-- <div class="col-md-4 littleCard pointer">
+                    <div style="position: relative; z-index: 100;">
+                      <div class="next-event-box-card white-text-container" style="width:100%;">
+                        
                       
-                      <img src="./assets/images/matrix.jpg" class="img-responsive box-figure" alt="">
-                      <div id="littleCard-dojo" class="littleCardTitle" >DOJO VIRTUAL</div>
+                        
+                        
+                      </div>
+
+                    </div>
+                    
+                    
+                  </div>
+                  
+                  <div hidden=true id="goodPractice-subject" class="subject" style="opacity: 0;">
+                    
+                    <div class="expanded-card-nav">
                       
+                      <div id="" class="cardTitle-expanded" >BOAS PRÁTICAS</div>
+                      <img onclick="{expandSubject('goodPractice-subject', 'coding-block')}" class="img-responsive box-figure pointer" style="height: 10vw; width: 10vw;" alt="" src="./assets/images/previews.png">
+                      
+                    </div>
+                    
+                    <!-- <div class="gallery">
+                      
+                      <img src="./assets/images/galeria-1.jpeg" class="img-responsive img-scale" alt="" height="100%">
+
                     </div>
                      -->
+                     
                   </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                 </div>
+                
+                
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              
+
+            </div>
               
               
               
@@ -319,7 +399,7 @@
               
               
               
-              
+<!--               
               <div id="" class="card" style="cursor: pointer ;opacity: 1; transition: opacity 2.5s; background-color: rgba(215, 215, 215, 0.1); color: #332018;">
                 <div class="card-block card-block-C" >
                   
@@ -342,7 +422,7 @@
                   
                 </div>
               </div>
-              
+               -->
               
               
               

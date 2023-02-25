@@ -44,6 +44,8 @@ setTimeout(() => {
   
 }, 100);
 
+
+
 function expandSubject(card, subject){
 
   document.getElementById(card).style.transition = 'opacity 1s';
