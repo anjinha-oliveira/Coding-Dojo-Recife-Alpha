@@ -7,13 +7,22 @@ function howItWorksVideo(){
   if (howItWorksVideoState === 0){
 
     document.getElementById('doCaosALama').pause();
-    document.getElementById('howItWorks-video').play();
+    document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = true;
+    document.getElementById('howItWorks-video').currentTime = 0;
     howItWorksVideoState = 1;
+
+    setTimeout(() => {
+      document.getElementById('howItWorks-video').play();
+    }, 2000);
 
   }
   else{
 
     document.getElementById('howItWorks-video').pause();
+    document.getElementById('doCaosALama').play();
+    document.getElementById('doCaosALama').currentTime = 0;
+    document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = false;
+    document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].currentTime = 0;
     howItWorksVideoState = 0;
     
 
@@ -281,7 +290,7 @@ function langSelection() {
     
     document.getElementById("next-event").textContent = 'Next Event(#122):';
     document.getElementById("event-time").textContent = '📅 12/06/2022 19h';
-    document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
+    document.getElementById("event-location").textContent = '🗺️ Empresarial Charles Darwin, R. Sen. José Henrique, 231 - Ilha do Leite, Recife - PE, 50070-460.';
     document.getElementById("event-register").textContent = 'Register:';
 
     document.getElementById("next-events").textContent = 'EVENTS';
@@ -317,7 +326,7 @@ function langSelection() {
 
     document.getElementById("next-event").textContent = 'Próximo Evento(#122):'; 
     document.getElementById("event-time").textContent = '📅 06/12/2022 19h';
-    document.getElementById("event-location").textContent = '🗺️ Labcodes Software Studio, Praça do Derby, 149, Sala 1109.';
+    document.getElementById("event-location").textContent = '🗺️ Empresarial Charles Darwin, R. Sen. José Henrique, 231 - Ilha do Leite, Recife - PE, 50070-460.';
     document.getElementById("event-register").textContent = 'Inscreva-se:';
 
     document.getElementById("next-events").textContent = 'EVENTOS';
