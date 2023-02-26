@@ -5112,6 +5112,8 @@ footer img{
         opacity: 1;
         transform: scale(1);
         transition: all 2.5s;
+
+        height: 50vw;
     
     }
     
