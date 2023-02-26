@@ -29,6 +29,17 @@ function howItWorksVideo(){
   }
 
 }
+
+function videoStop(){
+
+  document.getElementById('howItWorks-video').pause();
+  document.getElementById('doCaosALama').play();
+  document.getElementById('doCaosALama').currentTime = 0;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].muted = false;
+  document.getElementById('video').contentWindow.document.getElementsByTagName("video")[0].currentTime = 0;
+  howItWorksVideoState = 0;
+
+}
   
 
 setTimeout(() => {
