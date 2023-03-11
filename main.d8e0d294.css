@@ -4478,14 +4478,32 @@ input[type=checkbox] {
 
 }
 
-@media(){
 
-    #playButtonVideo {
+.pyladies-icon {
 
-        width:  30%;
+    width: 10vw;
 
+}
+
+@media(max-width:1000px){
+
+    .pyladies-icon {
+
+        width: 20vw;
+    
     }
+    
 
+}
+
+@media(max-width:800px){
+
+    .pyladies-icon {
+
+        width: 25vw;
+    
+    }
+    
 
 }
 

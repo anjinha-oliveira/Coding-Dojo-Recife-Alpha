@@ -379,12 +379,14 @@ function configVideoBox(){
     document.getElementById('video-play-button').style.transition = 'all 2s';
     document.getElementById('video-play-button').style.opacity = 0;
 
+    videoState = 'playing';
+
+
   }
 
 
 
-  videoState = 'playing';
-
+  
 }
 
 let videoState = 'paused';
