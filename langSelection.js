@@ -36,7 +36,7 @@ function langSelection() {
 
 
     document.getElementById("next-event").textContent = 'Próximo Evento(#7):'; 
-    document.getElementById("event-time").textContent = '📅 14/03/2022 19h';
+    document.getElementById("event-time").textContent = '📅 14/03/2023 19h';
     document.getElementById("event-register").textContent = 'Inscreva-se:';
 
     document.getElementById("next-events").textContent = 'EVENTOS';
