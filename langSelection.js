@@ -10,8 +10,8 @@ function langSelection() {
     currentLangIndex = 1;
 
     
-    document.getElementById("next-event").textContent = 'Next Event(#6):';
-    document.getElementById("event-time").textContent = '📅 12/06/2022 19h';
+    document.getElementById("next-event").textContent = 'Next Event(#7):';
+    document.getElementById("event-time").textContent = '📅 03/14/2023 19h';
     document.getElementById("event-register").textContent = 'Register:';
 
     document.getElementById("next-events").textContent = 'EVENTS';
@@ -35,8 +35,8 @@ function langSelection() {
     currentLangIndex = 0;
 
 
-    document.getElementById("next-event").textContent = 'Próximo Evento(#6):'; 
-    document.getElementById("event-time").textContent = '📅 06/12/2022 19h';
+    document.getElementById("next-event").textContent = 'Próximo Evento(#7):'; 
+    document.getElementById("event-time").textContent = '📅 14/03/2022 19h';
     document.getElementById("event-register").textContent = 'Inscreva-se:';
 
     document.getElementById("next-events").textContent = 'EVENTOS';
