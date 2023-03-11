@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400, 700|Oswald);
-@import url(https: //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400, 700|Oswald);
+@import url(https: //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); */
     /*!
  * Bootstrap v3.3.7 (http: //getbootstrap.com)
  * Copyright 2011-2016 Twitter,  Inc.
@@ -4053,7 +4053,7 @@ input[type=checkbox] {
     position: absolute;
     width: 14px;
     height: 14px;
-    background-color: rgba(39, 36, 36, 0.911);
+    background-color: rgba(39, 36, 36, 0.76);
 
     top: 0px;
     left: 0px;
@@ -4192,26 +4192,32 @@ input[type=checkbox] {
   .lang-background-box{
 
     display: inline-flex;
-    gap: 5px;
+    gap: 0.2vw;
     justify-content: center;
 
     width: fit-content;
-    height: 83%;
-    background-color: rgba(240, 231, 239, 0.767);
+    height: 100%;
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.479), rgba(215, 255, 244, 0.527));
 
     border-style: solid;
     border-color:  rgba(12, 11, 11, 0);
     border-width: 0.1px;
 
+    padding: 0 0.2vw 0 0.2vw;
 
     font-family:'Courier New', Courier, monospace;
 
-    color: rgb(63, 53, 53);
-    font-weight:400;
+    color: rgb(70, 70, 70);
+    font-weight:600;
     font-size: 1.2vw;
 
 }
 
+.lang-background-box:hover{
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.849), rgba(215, 255, 244, 0.932));
+
+}
 
 
   .toggleBox {
@@ -4422,7 +4428,6 @@ input[type=checkbox] {
 
   }
 
-
 .fa-icon {
 
     display: grid;
@@ -4432,8 +4437,77 @@ input[type=checkbox] {
     height: 5vw;
     line-height: 5vw;
     font-size: 3vw;
-    
+
+
 }
+
+.play-button-icon{
+
+
+    color: #000;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    line-height: 29px;
+    font-size: 15px;
+    text-align: center;
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+
+}
+
+#playButtonVideo {
+
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    height: inherit;
+    width:  58%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+
+    /* background-color: rgba(238, 238, 238, 0.212); */
+
+    cursor: pointer;
+    
+
+}
+
+@media(){
+
+    #playButtonVideo {
+
+        width:  30%;
+
+    }
+
+
+}
+
+.dojo-animation{
+
+    height: 32vw; 
+    width: 100%; 
+    opacity: 1; 
+    transition: opacity 1s; 
+    /* background-image: url('assets/images/Coding-Dojo-Recife-Crab-Animation.gif'); */
+    background-size: 100% 100%;
+
+    border-style:solid;
+    border-width: var(--header-border-width) 0 var(--header-border-width) 0px;
+    border-color: var(--header-border-color);
+    
+    margin: 0;
+    padding: 0;
+
+  }
+
+
 
 @media(max-width:600px){
 
@@ -4469,23 +4543,7 @@ input[type=checkbox] {
 
 }
 
-  .dojo-animation{
 
-    height: 32vw; 
-    width: 100%; 
-    opacity: 1; 
-    transition: opacity 1s; 
-    /* background-image: url('assets/images/Coding-Dojo-Recife-Crab-Animation.gif'); */
-    background-size: 100% 100%;
-
-    border-style:solid;
-    border-width: var(--header-border-width) 0 var(--header-border-width) 0px;
-    border-color: var(--header-border-color);
-    
-    margin: 0;
-    padding: 0;
-
-  }
 
   
 
@@ -5128,6 +5186,25 @@ footer img{
 
 }
 
+.social-media-bar-bg{
+
+    width: 10vw;
+    height: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.479), rgba(215, 255, 244, 0.527));
+
+}
+
+.social-media-bar-bg:hover{
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(215, 255, 244, 0.856));
+
+}
 
 
 

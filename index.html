@@ -13,7 +13,7 @@
   
   <title>codingdojorecife.com</title>  
   
-  <link rel="icon" href="./assets/images/dojo-badge.jpg">
+  <link rel="icon" href="./assets/images/dojo-badge-homepage-icon.png">
   
   <link href="./main.d8e0d294.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,9 +32,18 @@
         
         <div id="topText" class="topText">PERFECTING THE ART OF</div>
         
-        <audio id="doCaosALama" controls autoplay loop style="height: 82%; opacity: 0.8; background-color: white;" title="Canção 'Do Caos a Lama' de Nação Zumbi">
+        <audio  onloadeddata="{updateAudioIconState('pause')}" onpause="{updateAudioIconState('pause')}" onplay="{updateAudioIconState('play')}" id="doCaosALama" hidden controls loop style="height: 82%; opacity: 0.8; background-color: white;" title="Canção 'Do Caos a Lama' de Nação Zumbi">
           <source src="./assets/audio/DaLamaaoCaos.mp3" type="audio/mpeg">
         </audio>
+
+        
+        <div onclick="{playAudio()}" class="social-media-bar-bg" style=" cursor: pointer;"  title="Canção 'Do Caos a Lama' de Nação Zumbi">
+
+          <div class="play-button-icon" title="Canção 'Do Caos a Lama' de Nação Zumbi">
+            <img  src="./assets/images/play.png" width="70%" height="70%" id="bar-play-button" style="opacity: 0.8;" >
+          </div>
+
+        </div>
         
         <div class="lang-background-box">  
           
@@ -116,11 +125,13 @@
         
         
         
-        <div id="dojo-animation" class="dojo-animation"> 
-          
-          <iframe onclick="{playVideo()}" onload="{configVideoBox()}" allow="autoplay" muted="true" autoplay="true" id="video" src="./assets/videos/CodingDojoRecifeTheCrabAct.mp4" frameborder="0" style="cursor: pointer; transition: all 3s; top:0;left:0;width:100%; height:100%; margin: 0;" title="trailer"></iframe>
-          
+        <div onclick="{playVideo()}" id="dojo-animation" class="dojo-animation"> 
+          <div  id="playButtonVideo">
+            <img id="video-play-button" src="assets/images/play.png" width="50%" height="100%" style="opacity: 0.5;" >
+          </div>
+          <video  oncanplay="{configVideoBox()}" id="video" src="./assets/videos/CodingDojoRecifeTheCrabAct.mp4" frameborder="0" style="cursor: pointer; transition: all 3s; top:0;left:0;width:100%; height:100%; margin: 0;" title="trailer">
         </div>
+        
         
         <div id="sidewalk" class="sidewalk"> <div id="sidewalkText" style="width:100%;"> C <br> O <br> D <br> I <br> N <br> G </div></div>
         
