@@ -16,4 +16,22 @@ function expandSubject(card, subject){
   
   
   
+  function expandViewForVideo(){
+
+    if (window.innerWidth < 900){
+
+      document.getElementsByClassName('card-block-A')[0].style.paddingLeft = 0; 
+      document.getElementsByClassName('card-block-A')[0].style.paddingRight = 0;
+  
+    }
+
+  
+  }
+
+  function returnViewToNormal(){
+
+      document.getElementsByClassName('card-block-A')[0].style.paddingLeft = '40px'; 
+      document.getElementsByClassName('card-block-A')[0].style.paddingRight = '40px';
+
+  }
   

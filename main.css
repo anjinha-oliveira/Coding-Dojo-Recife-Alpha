@@ -136,6 +136,12 @@ p {
     width: 33.33333%;}
 
 
+@media (max-width:1000px) {
+    .col-md-4 {
+        width: 100%;}
+    }
+
+
 .with-tooltip {
   position: relative;
 }
@@ -525,6 +531,7 @@ input[type=checkbox] {
     height: 32vw;
     display: grid;
     grid-template-rows: 1.5fr 1fr 0.5fr;
+    gap: 0.5vw;
     
 }
 
@@ -669,6 +676,17 @@ input[type=checkbox] {
     /* background-color: rgba(238, 238, 238, 0.212); */
 
     cursor: pointer;
+    
+
+}
+
+@media(max-width:900px){
+
+    #playButtonVideo {
+
+        width:  100%;
+
+    }
     
 
 }
@@ -1104,9 +1122,6 @@ body {
     bottom: 0px;
     left: 0px;
     opacity: 0.35;
-
-
-    
 
 }
 

@@ -160,7 +160,7 @@
                           
                         </div>
                         
-                        <div onclick="{expandSubject('events-block', 'howItWorks-subject'); howItWorksVideo()}" class="col-md-4 littleCard pointer">
+                        <div onclick="{expandSubject('events-block', 'howItWorks-subject'); howItWorksVideo(); expandViewForVideo();}" class="col-md-4 littleCard pointer">
                           
                           <img src="./assets/images/comofunciona.png" class="img-responsive box-figure" alt="">
                           <div id="littleCard-how" autoplay="true" class="littleCardTitle">COMO FUNCIONA</div>
@@ -238,7 +238,7 @@
                       <div class="expanded-card-nav">
                         
                         <div id="exp-how" class="cardTitle-expanded">COMO FUNCIONA</div>
-                        <img onclick="{expandSubject('howItWorks-subject', 'events-block');videoStop()}" class="img-responsive box-figure pointer" style="height: 10vw; width: 10vw;" alt="" src="./assets/images/previews.png">
+                        <img onclick="{expandSubject('howItWorks-subject', 'events-block');videoStop(); returnViewToNormal();}" class="img-responsive box-figure pointer" style="height: 10vw; width: 10vw;" alt="" src="./assets/images/previews.png">
                         
                       </div>
                       
@@ -261,7 +261,7 @@
                       
                       <div id="coding-block" class="events-block">
                         
-                        <div id="coding-stuff" class="cardTitle" style="font-size: 15vw;">CONDING</div>
+                        <div id="coding-stuff" class="cardTitle" style="font-size: 15vw;">CODING</div>
                         
                         <div id="events-row" class="row">
                           
