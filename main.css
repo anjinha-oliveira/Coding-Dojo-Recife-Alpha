@@ -550,7 +550,7 @@ input[type=checkbox] {
 
 }
 
-.next-event-header-text, .next-event-header-text-top {
+.next-event-header-text {
     
     height: 100%;
     display: grid;
@@ -565,20 +565,13 @@ input[type=checkbox] {
 
 }
 
-.next-event-header-text:hover {
-
-    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(245, 245, 245, 0.856));
-    color: #ff00d0;
-    
-
-}
 
 
 .next-event-box {
     
     display: grid;
 
-    grid-auto-rows: auto 0.5fr 0.5fr 0.5fr;
+    grid-auto-rows: 3fr 1fr;
     grid-template-columns: 1fr;
     gap: 0;
 
@@ -588,20 +581,66 @@ input[type=checkbox] {
 
 
     color: azure;
-    padding: 0 0 0 10px;
     font-weight: 700;
     font-size: 1.4vw;
 
-    background-color: rgba(255, 240, 238, 0.19);
+    background-color: rgba(255, 240, 238, 0);
     height: 100%;
 
     margin: 0;
-    padding: 0;
+    padding:  0 0.5vw 0 0.5vw;
 
     width: 100%;
+    height: 100%;
     
     
     
+}
+
+.info-box-container{
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    gap: 0.4vw;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    
+
+}
+
+.info-box{
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    
+
+    height: 100%; 
+    width: 100%; 
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.455), rgba(215, 255, 244, 0.432));
+
+    
+    cursor: pointer;
+
+
+}
+
+.info-box:hover{
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(215, 255, 244, 0.856));
+
+
+
 }
 
 .next-event-box-card {
@@ -744,12 +783,175 @@ input[type=checkbox] {
     align-content: center;
     
     opacity: 0;
+    
+    transition: all 1.2s;
 
     /* background-color: rgba(238, 238, 238, 0.212); */
 
     cursor: pointer;
     
 
+}
+
+#register-container {
+
+    content: "";
+    position:absolute;
+    z-index: 999;
+    height: inherit;
+    width:  58%;
+
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+    grid-template-columns: 1fr;
+    
+    opacity: 0;
+    
+    transition: all 2s;
+
+    /* background-color: rgba(245, 245, 245, 0.795); */
+
+    backdrop-filter: blur(15px);
+
+    color: azure;
+    font-size: 1vw;
+    font-weight: 700;
+
+    cursor: default;
+
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    
+
+}
+
+#register-instructions{
+
+    padding: 2vw;
+
+}
+
+#register-button{
+
+
+    background-color: rgb(64, 159, 255);
+    border-radius: 2%;
+    font-size: 2vw;
+    margin: 2vw;
+    padding: 1vw;
+
+    cursor: pointer;
+
+}
+
+#calendar-container {
+
+    content: "";
+    position:absolute;
+    z-index: 999;
+    height: inherit;
+    width:  58%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+    justify-content: flex-start;
+    align-content: flex-start;
+    
+    opacity: 0;
+    
+    transition: all 2s;
+
+    /* background-color: rgba(245, 245, 245, 0.795); */
+
+    backdrop-filter: blur(15px);
+
+
+    font-weight: 800;
+
+    cursor: default;
+    
+
+}
+
+.event-date-box {
+
+    width: 100px;
+    
+
+    margin: 2vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    background-image: linear-gradient(130deg, rgba(236, 236, 236, 0.664), rgba(255, 255, 255, 0.664),rgb(198, 198, 198),rgba(255, 255, 255, 0.824), rgba(255, 255, 255, 0.824));
+
+
+    border-style: solid;
+    border-color: rgba(41, 41, 41, 0.735);
+    border-width: 0.05px;
+
+    cursor: pointer;
+
+}
+
+.year{
+
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+
+    font-size: 1.2vw;
+    
+}
+
+.day{
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+
+    border-style: solid;
+    border-color: rgba(41, 41, 41, 0.735);
+    border-width: 0.4vw 0 0.6vw 0;
+
+    font-size: 4vw;
+}
+
+.month{
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+
+    font-size: 2.3vw;
 }
 
 #playButtonVideo:hover {
@@ -971,15 +1173,9 @@ input[type=checkbox] {
     }
     
     .next-event-box {
-        
-        align-self: center;
-        color: azure;
-        padding: 0 0 0 10px;
-        font-weight: 700;
-        font-size: 3vw;
-        
+
     }
-    
+
     
     .topText{
         
@@ -1078,7 +1274,7 @@ body {
     position: relative; 
     z-index: 3000;
     
-    
+    cursor: default;
     
 }
 
