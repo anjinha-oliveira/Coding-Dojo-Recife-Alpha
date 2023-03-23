@@ -425,7 +425,7 @@ input[type=checkbox] {
 
     width: fit-content;
     height: 100%;
-    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.479), rgba(215, 255, 244, 0.527));
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.806), rgba(215, 255, 244, 0.857));
 
     border-style: solid;
     border-color:  rgba(12, 11, 11, 0);
@@ -542,14 +542,61 @@ input[type=checkbox] {
     
 }
 
+#next-event {
+
+    color: azure;
+    background-color: rgba(255, 40, 183, 0.473);
+    width: 100%;
+
+}
+
+.next-event-header-text {
+    
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+
+}
+
+.next-event-header-text:hover {
+
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(215, 255, 244, 0.856));
+    color: #381f38;
+    
+
+}
+
 
 .next-event-box {
     
-    align-self: center;
+    display: grid;
+
+    grid-auto-rows: auto 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+
     color: azure;
     padding: 0 0 0 10px;
     font-weight: 700;
-    font-size: 1.1vw;
+    font-size: 1.4vw;
+
+    background-color: rgba(255, 240, 238, 0.19);
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
     
     
     
@@ -672,10 +719,19 @@ input[type=checkbox] {
     display: inline-flex;
     justify-content: center;
     align-content: center;
+    
+    opacity: 0;
 
     /* background-color: rgba(238, 238, 238, 0.212); */
 
     cursor: pointer;
+    
+
+}
+
+#playButtonVideo:hover {
+
+    opacity: 0.4;
     
 
 }
@@ -1209,6 +1265,10 @@ footer img{
     position: relative;
     z-index: 100;
 
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
     cursor:pointer;
 
 }
@@ -1372,8 +1432,7 @@ footer img{
     align-content: center;
     align-items: center;
 
-    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.479), rgba(215, 255, 244, 0.527));
-
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.806), rgba(215, 255, 244, 0.857));
 }
 
 .social-media-bar-bg:hover{

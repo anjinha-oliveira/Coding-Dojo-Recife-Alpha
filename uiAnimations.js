@@ -56,34 +56,6 @@ setTimeout(() => {
 
 
 
-
-
-function registerBackgroundOn(){
-    
-    document.getElementById('register').style.backgroundColor = 'purple';
-    
-}
-
-function registerBackgroundOff(){
-    
-    document.getElementById('register').style.backgroundColor = '';
-    
-}
-
-function locationBackgroundOn(){
-    
-    document.getElementById('event-location').style.backgroundColor = 'purple';
-    
-}
-
-function locationBackgroundOff(){
-    
-    document.getElementById('event-location').style.backgroundColor = '';
-    
-}
-
-
-
 function moddedLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge-alt.png";}
 
 function normalLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge.png";}

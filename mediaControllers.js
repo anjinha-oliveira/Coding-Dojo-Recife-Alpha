@@ -3,8 +3,7 @@ function howItWorksVideo(){
 
   if (howItWorksVideoState === 0){
 
-    document.getElementById('doCaosALama').pause();
-    document.getElementsByTagName("video")[0].pause();
+    document.getElementById('doCaosALama').muted = "true";
     document.getElementById('howItWorks-video').currentTime = 0;
     howItWorksVideoState = 1;
 
@@ -16,13 +15,9 @@ function howItWorksVideo(){
   else{
 
     document.getElementById('howItWorks-video').pause();
-    document.getElementById('doCaosALama').play();
-    document.getElementsByTagName("video")[0].play();
-    document.getElementById('doCaosALama').currentTime = 0;
-    document.getElementsByTagName("video")[0].currentTime = 0;
+    document.getElementById('doCaosALama').muted = 0;
     howItWorksVideoState = 0;
     
-
   }
 
 }
@@ -30,10 +25,8 @@ function howItWorksVideo(){
 function videoStop(){
 
   document.getElementById('howItWorks-video').pause();
-  document.getElementById('doCaosALama').play();
   document.getElementById('doCaosALama').currentTime = 0;
-  document.getElementsByTagName("video")[0].muted = false;
-  document.getElementsByTagName("video")[0].currentTime = 0;
+  document.getElementById('doCaosALama').muted = 0;
   howItWorksVideoState = 0;
 
 }
@@ -56,57 +49,15 @@ function configVideoBox(){
   
     if (document.getElementsByTagName("video")[0].paused === false){
   
-      document.getElementById('video-play-button').src = "./assets/images/pause.png";
-      document.getElementById('video-play-button').style.transition = 'all 2s';
-      document.getElementById('video-play-button').style.opacity = 0;
-  
-      videoState = 'playing';
+      document.getElementById('video-play-button').src = "./assets/images/off.png";
   
   
     }
   
   
-  
-    
+
   }
   
-  let videoState = 'paused';
-  function playVideo(){
-  
-    if (videoState === 'paused'){
-  
-      document.getElementsByTagName("video")[0].controls = false;
-      document.getElementsByTagName("video")[0].loop = true;
-      document.getElementsByTagName("video")[0].muted = false;
-      document.getElementsByTagName("video")[0].style.margin = 0;
-      document.getElementsByTagName("video")[0].play();
-      document.getElementsByTagName("audio")[0].play();
-    
-      document.getElementsByTagName("audio")[0].currentTime = 0;
-      document.getElementsByTagName("video")[0].currentTime = 0;
-    
-      document.getElementById('video-play-button').src = "./assets/images/pause.png";
-      document.getElementById('video-play-button').style.transition = 'all 2s';
-      document.getElementById('video-play-button').style.opacity = 0;
-  
-      videoState = 'playing';
-      
-  
-    } else {
-  
-      document.getElementsByTagName("video")[0].pause();
-      document.getElementsByTagName("audio")[0].pause();
-      document.getElementById('video-play-button').src = "./assets/images/play.png";
-  
-      videoState = 'paused';
-  
-    }
-  
-  
-  
-  }
-
-
 
 function updateAudioIconState(state){
 
@@ -115,14 +66,20 @@ function updateAudioIconState(state){
   
     if (state === 'pause'){
   
-      document.getElementById('bar-play-button').src = "./assets/images/play.png";
+      document.getElementById('bar-play-button').src = "./assets/images/off.png";
+
+      document.getElementsByTagName("audio")[0].currentTime = 0;
+    
+      document.getElementById('video-play-button').src = "./assets/images/off.png";
+
   
     }
   
     if (state === 'play'){  
   
-      document.getElementById('bar-play-button').src = "./assets/images/pause.png";
-  
+      document.getElementById('bar-play-button').src = "./assets/images/on.png";
+
+      document.getElementById('video-play-button').src = "./assets/images/on.png";
   
     };
   
@@ -135,7 +92,7 @@ function updateAudioIconState(state){
       
       document.getElementsByTagName("audio")[0].currentTime = 0;
       document.getElementsByTagName("audio")[0].play();
-      document.getElementById('bar-play-button').src = "./assets/images/pause.png";
+      document.getElementById('bar-play-button').src = "./assets/images/on.png";
   
       return
       
@@ -143,7 +100,7 @@ function updateAudioIconState(state){
     
     if (document.getElementsByTagName("audio")[0].paused === false){
       document.getElementsByTagName("audio")[0].pause();
-      document.getElementById('bar-play-button').src = "./assets/images/play.png";
+      document.getElementById('bar-play-button').src = "./assets/images/off.png";
   
       return
       
