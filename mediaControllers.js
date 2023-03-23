@@ -49,7 +49,7 @@ function configVideoBox(){
   
     document.getElementsByTagName("video")[0].controls = false;
     document.getElementsByTagName("video")[0].loop = true;
-    document.getElementsByTagName("video")[0].muted = false;
+    document.getElementsByTagName("video")[0].muted = true;
     document.getElementsByTagName("video")[0].style.margin = 0;
     document.getElementsByTagName("video")[0].play();
     document.getElementsByTagName("audio")[0].play();
