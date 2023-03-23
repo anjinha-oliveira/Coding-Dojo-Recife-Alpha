@@ -545,19 +545,21 @@ input[type=checkbox] {
 #next-event {
 
     color: azure;
-    background-color: rgba(255, 40, 183, 0.473);
+    background-color: rgba(81, 52, 32, 0.473);
     width: 100%;
 
 }
 
-.next-event-header-text {
+.next-event-header-text, .next-event-header-text-top {
     
     height: 100%;
     display: grid;
-    justify-content: center;
-    justify-items: center;
+    justify-content: start;
+    justify-items: start;
     align-items: center;
     align-content: center;
+
+    padding-left: 1vw;
 
     width: 100%;
 
@@ -565,8 +567,8 @@ input[type=checkbox] {
 
 .next-event-header-text:hover {
 
-    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(215, 255, 244, 0.856));
-    color: #381f38;
+    background-image: linear-gradient(170deg,rgba(255, 255, 255, 0.918), rgba(245, 245, 245, 0.856));
+    color: #ff00d0;
     
 
 }
@@ -729,6 +731,27 @@ input[type=checkbox] {
 
 }
 
+#map-container {
+
+    content: "";
+    position:absolute;
+    z-index: 999;
+    height: inherit;
+    width:  58%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    
+    opacity: 0;
+
+    /* background-color: rgba(238, 238, 238, 0.212); */
+
+    cursor: pointer;
+    
+
+}
+
 #playButtonVideo:hover {
 
     opacity: 0.4;
@@ -738,7 +761,7 @@ input[type=checkbox] {
 
 @media(max-width:900px){
 
-    #playButtonVideo {
+    #playButtonVideo, #map-container {
 
         width:  100%;
 
@@ -1049,6 +1072,11 @@ body {
     font-weight: bold;
     padding: 0 5vw 0 0vw;
     border-radius: 0 10px 10px 0;
+
+    font-size: 15vw; 
+    opacity: 0.7;  
+    position: relative; 
+    z-index: 3000;
     
     
     
@@ -1194,6 +1222,22 @@ body {
     bottom: 0px;
     left: 0px;
     opacity: 0.35;
+
+}
+
+.card-block-C::before{
+
+    content: "";
+    background-size: cover;
+    /* background-image: url(./assets/images/codando.png); */
+    background-color: antiquewhite;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
 
 }
 

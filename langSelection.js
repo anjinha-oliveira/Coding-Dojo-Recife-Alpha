@@ -21,6 +21,7 @@ function langSelection() {
     document.getElementById("littleCard-how").textContent = 'HOW IT WORKS';
     document.getElementById("littleCard-startingCoding").textContent = 'STARTING TO CODE';
     document.getElementById("littleCard-goodPractices").textContent = 'GOOD PRACTICES';
+    document.getElementById("littleCard-challenges").textContent ='CHALLENGES';
 
 
     document.getElementById("exp-next").textContent = 'NEXT EVENTS';
@@ -28,6 +29,7 @@ function langSelection() {
     document.getElementById("exp-how").textContent = 'HOW IT WORKS';
     document.getElementById("exp-coding").textContent = 'STARTING TO CODE';
     document.getElementById("exp-good").textContent = 'GOOD PRACTICES';
+    document.getElementById("exp-challenges").textContent = 'CHALLENGES';
 
   } else {
     
@@ -46,12 +48,14 @@ function langSelection() {
     document.getElementById("littleCard-how").textContent = 'COMO FUNCIONA';
     document.getElementById("littleCard-startingCoding").textContent = 'COMEÇANDO A CODAR';
     document.getElementById("littleCard-goodPractices").textContent = 'BOAS PRÁTICAS';
+    document.getElementById("littleCard-challenges").textContent ='DESAFIOS';
 
     document.getElementById("exp-next").textContent = 'PRÓXIMOS EVENTOS';
     document.getElementById("exp-gallery").textContent = 'GALERIA';
     document.getElementById("exp-how").textContent = 'COMO FUNCIONA';
     document.getElementById("exp-coding").textContent =  'COMEÇANDO A CODAR';
     document.getElementById("exp-good").textContent = 'BOAS PRÁTICAS';
+    document.getElementById("exp-challenges").textContent = 'DESAFIOS';
 
   }
 
