@@ -66,11 +66,26 @@
         <div class="dojo-badge" >
           
           <div class="dojo-badge-grid">
+
             <div class="dojo-badge-grid-top" >
               
-              <div style="border-width: 0px; border-color: #222; border-style: solid;">
+              <div style="background-image: url('./assets/images/sidewalks/manguezal2.png') ;border-width: 0px; border-color: #222; border-style: solid; background-color: rgb(249, 249, 249);">
                 <a  href=""><img onmouseover="{moddedLogo()}" onmouseout="{normalLogo()}" id="dojo-art" src="./assets/images/dojo-badge.png" width="100%" height="100%"></a>
               </div> 
+
+              <div class="extra-box-container" >
+
+                <div  onclick = "{markSelectionExtra(0);}" onmouseover="{showTitle('SEJA UM HOST')}" onmouseleave="{showTitle('')}" class="info-box-extra">
+                  <img src="./assets/images/hostEvent.png" width="80%">
+                </div>
+                <div  onclick = "{markSelectionExtra(1);}" onmouseover="{showTitle('DESAFIOS')}" onmouseleave="{showTitle('')}" class="info-box-extra">
+                  <img src="./assets/images/challenge.png" width="100%">
+                </div>
+                <div  onclick = "{markSelectionExtra(2);}" onmouseover="{showTitle('DÚVIDAS')}" onmouseleave="{showTitle('')}" class="info-box-extra">
+                  <img src="./assets/images/howItWorks.png" width="100%">
+                </div>
+
+              </div>
               
             </div>
             
@@ -94,17 +109,10 @@
 
               </div>
               
-              <div id="menu-option-title"></div>
-              <!-- <div id="event-time" class="next-event-header-text">📅 14/03/2023 19h</div>
-              
-              <div id="event-location" class="next-event-header-text" onmouseover="{mapViewerOn()}">🗺️ LOCAL: CIn - UFPE</div>
-              
-                INSCREVA-SE: BIT.LY/DOJORECIFE7
-               -->
-              
+            
             </div>
             
-            <div id="externalLinks" class="externalLinks text-center"> 
+            <div id="" class="externalLinks text-center"> 
               
               <a class="fa-icon" href="https://web.telegram.org/" title="">
                 <i class="fa fa-telegram social-media-mod"></i>
@@ -192,11 +200,14 @@
         
       </header>
       
-      <div id="header-body-frontier" class="header-body-frontier"></div>
+      <div id="header-body-frontier" class="header-body-frontier">
+
+         <div id="menu-option-title"></div>
+
+      </div>
       
       
       <!-- Add your site or app content here -->
-      <div class="main-container-cover" style="margin: 0 0.5vw 0 0.5vw; background-image: linear-gradient(90deg, rgba(63, 31, 53, 0.4), rgba(63, 12, 51, 0.5), rgba(77, 31, 65, 0.4));">
         <div class="main-container">
           <div class="container">
             <div class="row">
@@ -414,13 +425,13 @@
                       
                       <div id="partners-block" class="events-block">
                         
-                        <div id="partners-stuff" class="cardTitle" style="color: black; font-size: 12vw;">PARCEIROS</div>
+                        <div id="partners-stuff" class="cardTitle" style="font-size: 12vw;">PARCEIROS</div>
                         
                         <div id="partners-row" class="row">
                           
                           <a href="https://labcodes.com.br/" class="col-md-4 littleCard pointer">
                             
-                            <img src="./assets/images/labcodes.png" class="img-responsive box-figure" alt="">
+                            <img src="./assets/images/labcodes.png" width="50%" class="img-responsive box-figure" alt="">
                             
                           </a>
                           
@@ -439,7 +450,7 @@
 
                           <a href="https://portal.cin.ufpe.br/" class="col-md-4 littleCard pointer">
                             
-                            <img id="desafios-img" src="./assets/images/CIn.png" class="img-responsive box-figure" alt="">
+                            <img id="desafios-img" src="./assets/images/CIn.png" width="70%" class="img-responsive box-figure" alt="">
                             
                           </a>
 
@@ -491,7 +502,7 @@
             
           </div>
         </div>
-      </div>
+
       
     </main>
     

@@ -28,13 +28,13 @@ function sidewalk(){
         
         
         document.getElementById('langBox').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][1] + "')";
-        document.getElementById('externalLinks').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
+        // document.getElementById('externalLinks').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
         document.getElementById('footer').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][2] + "')";
         document.getElementById('header-body-frontier').style.backgroundImage = "url(" + "'assets/images/sidewalks/" + sidewalksList[currentBackgroundIndex][3] + "')";
         
         document.getElementById('sidewalk').style.backgroundSize = 'cover';
         document.getElementById('langBox').style.backgroundSize = 'contain';
-        document.getElementById('externalLinks').style.backgroundSize = 'cover'; 
+        // document.getElementById('externalLinks').style.backgroundSize = 'cover'; 
         
     }
     

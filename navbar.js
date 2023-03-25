@@ -9,6 +9,8 @@ function mapViewerOn(){
     document.getElementById('register-container').style.opacity = 0;
     document.getElementById('register-container').style.zIndex = 999;
 
+    markSelectionExtra(undefined);
+
 }
 
 function mapViewerOff(){
@@ -17,6 +19,7 @@ function mapViewerOff(){
     document.getElementById('map-container').style.zIndex = 999;
 
     markSelection(undefined);
+    markSelectionExtra(undefined);
     
 }
 
@@ -34,6 +37,8 @@ function calendarViewerOn(){
     document.getElementById('register-container').style.opacity = 0;
     document.getElementById('register-container').style.zIndex = 999;
 
+    markSelectionExtra(undefined);
+
 }
 
 function calendarViewerOff(){
@@ -42,7 +47,7 @@ function calendarViewerOff(){
     document.getElementById('calendar-container').style.zIndex = 999;
 
     markSelection(undefined);
-    
+    markSelectionExtra(undefined);
 }
 
 function registerViewerOn(){
@@ -56,6 +61,8 @@ function registerViewerOn(){
     document.getElementById('calendar-container').style.opacity = 0;
     document.getElementById('calendar-container').style.zIndex = 999;
 
+    markSelectionExtra(undefined);
+
 }
 
 function registerViewerOff(){
@@ -64,7 +71,8 @@ function registerViewerOff(){
     document.getElementById('register-container').style.zIndex = 999;
 
     markSelection(undefined);
-    
+    markSelectionExtra(undefined);
+
 }
 
 
@@ -79,12 +87,37 @@ function showTitle(menuOptionTitle) {
 
     document.getElementById('menu-option-title').innerHTML = menuOptionTitle;
 
+    if(menuOptionTitle != ''){
+        document.getElementById('menu-option-title').style.backdropFilter = 'blur(12px)';
+    }else{document.getElementById('menu-option-title').style.backdropFilter = 'blur(0px)';}
+    
+    
+    
+
 
 }
 
 function markSelection(selectionIndex){
 
     let infoBoxObjectList = document.getElementsByClassName('info-box');
+    
+    for (i = 0; i < infoBoxObjectList.length; i++){
+
+        infoBoxObjectList[i].style.backgroundColor = 'transparent';
+
+    }
+
+    if(selectionIndex != undefined){
+
+        infoBoxObjectList[selectionIndex].style.backgroundColor = '#ffffff';
+
+    }
+
+}
+
+function markSelectionExtra(selectionIndex){
+
+    let infoBoxObjectList = document.getElementsByClassName('info-box-extra');
     
     for (i = 0; i < infoBoxObjectList.length; i++){
 
