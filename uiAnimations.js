@@ -56,9 +56,9 @@ setTimeout(() => {
 
 
 
-function moddedLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge-alt.png";}
+function moddedLogo(){document.getElementById('dojo-art').style.transform = 'scale(1.01)';}
 
-function normalLogo(){document.getElementById('dojo-art').src="./assets/images/dojo-badge.png";}
+function normalLogo(){document.getElementById('dojo-art').style.transform = 'scale(1.0)';}
 
 
 

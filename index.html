@@ -69,20 +69,20 @@
 
             <div class="dojo-badge-grid-top" >
               
-              <div style="background-image: url('./assets/images/sidewalks/manguezal2.png') ;border-width: 0px; border-color: #222; border-style: solid; background-color: rgb(249, 249, 249);">
+              <div class="dojo-badge-bg">
                 <a  href=""><img onmouseover="{moddedLogo()}" onmouseout="{normalLogo()}" id="dojo-art" src="./assets/images/dojo-badge.png" width="100%" height="100%"></a>
               </div> 
 
               <div class="extra-box-container" >
 
                 <div  onclick = "{markSelectionExtra(0);}" onmouseover="{showTitle('SEJA UM HOST')}" onmouseleave="{showTitle('')}" class="info-box-extra">
-                  <img src="./assets/images/hostEvent.png" width="80%">
+                  <img class="navbar-img-extra" id="navbar-img-4" src="./assets/images/hostEvent.png" width="85%">
                 </div>
                 <div  onclick = "{markSelectionExtra(1);}" onmouseover="{showTitle('DESAFIOS')}" onmouseleave="{showTitle('')}" class="info-box-extra">
-                  <img src="./assets/images/challenge.png" width="100%">
+                  <img class="navbar-img-extra" id="navbar-img-5" src="./assets/images/challenge.png" width="75%">
                 </div>
                 <div  onclick = "{markSelectionExtra(2);}" onmouseover="{showTitle('DÚVIDAS')}" onmouseleave="{showTitle('')}" class="info-box-extra">
-                  <img src="./assets/images/howItWorks.png" width="100%">
+                  <img class="navbar-img-extra" id="navbar-img-6" src="./assets/images/howItWorks.png" width="75%">
                 </div>
 
               </div>
@@ -94,18 +94,18 @@
               <div  class="info-box-container">
 
                 <div  onclick = "{calendarViewerOn(); markSelection(0);}" onmouseover="{showTitle('SELECIONAR EVENTO')}" onmouseleave="{showTitle('')}" class="info-box">
-                  <img src="./assets/images/calendar.png" width="50%">
+                  <img class="navbar-img" id="navbar-img-1" src="./assets/images/calendar.png" width="35%">
                 </div>
                 
                 <div onclick = "{mapViewerOn(); markSelection(1);}" onmouseover="{showTitle('VER LOCALIZAÇÃO')}" onmouseleave="{showTitle('')}" class="info-box">
-                  <img src="./assets/images/map.png" width="50%">
+                  <img class="navbar-img" id="navbar-img-2" src="./assets/images/map.png" width="15%">
                 </div>
                 
-                <div  id="event-register"  href="https://www.bit.ly/dojorecife7">
+                
                 <div onclick = "{registerViewerOn(); markSelection(2);}" onmouseover="{showTitle('PARTICIPAR')}" onmouseleave="{showTitle('')}" class="info-box">
-                  <img src="./assets/images/register.png" width="50%" style="padding: 0.3vw;">
+                  <img class="navbar-img" id="navbar-img-3" src="./assets/images/register.png" width="35%">
                 </div>
-              </div>
+
 
               </div>
               

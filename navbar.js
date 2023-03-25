@@ -92,7 +92,7 @@ function showTitle(menuOptionTitle) {
     }else{document.getElementById('menu-option-title').style.backdropFilter = 'blur(0px)';}
     
     
-    
+
 
 
 }
