@@ -9,7 +9,6 @@ function mapViewerOn(){
     document.getElementById('register-container').style.opacity = 0;
     document.getElementById('register-container').style.zIndex = 999;
 
-    markSelectionExtra(undefined);
 
 }
 
@@ -19,7 +18,7 @@ function mapViewerOff(){
     document.getElementById('map-container').style.zIndex = 999;
 
     markSelection(undefined);
-    markSelectionExtra(undefined);
+
     
 }
 
@@ -37,7 +36,7 @@ function calendarViewerOn(){
     document.getElementById('register-container').style.opacity = 0;
     document.getElementById('register-container').style.zIndex = 999;
 
-    markSelectionExtra(undefined);
+
 
 }
 
@@ -47,7 +46,7 @@ function calendarViewerOff(){
     document.getElementById('calendar-container').style.zIndex = 999;
 
     markSelection(undefined);
-    markSelectionExtra(undefined);
+
 }
 
 function registerViewerOn(){
@@ -61,7 +60,7 @@ function registerViewerOn(){
     document.getElementById('calendar-container').style.opacity = 0;
     document.getElementById('calendar-container').style.zIndex = 999;
 
-    markSelectionExtra(undefined);
+
 
 }
 
@@ -71,7 +70,7 @@ function registerViewerOff(){
     document.getElementById('register-container').style.zIndex = 999;
 
     markSelection(undefined);
-    markSelectionExtra(undefined);
+
 
 }
 
@@ -109,29 +108,13 @@ function markSelection(selectionIndex){
 
     if(selectionIndex != undefined){
 
-        infoBoxObjectList[selectionIndex].style.backgroundColor = '#ffffff';
+        infoBoxObjectList[selectionIndex].style.backgroundColor = 'white';
 
     }
 
 }
 
-function markSelectionExtra(selectionIndex){
 
-    let infoBoxObjectList = document.getElementsByClassName('info-box-extra');
-    
-    for (i = 0; i < infoBoxObjectList.length; i++){
-
-        infoBoxObjectList[i].style.backgroundColor = 'transparent';
-
-    }
-
-    if(selectionIndex != undefined){
-
-        infoBoxObjectList[selectionIndex].style.backgroundColor = '#ffffff';
-
-    }
-
-}
 
 function selectEvent(eventIndex){
 
@@ -139,15 +122,14 @@ function selectEvent(eventIndex){
     
     for (i = 0; i < eventsBoxObjectList.length; i++){
 
-        eventsBoxObjectList[i].style.backgroundImage = 'linear-gradient(130deg, rgba(236, 236, 236, 0.664), rgba(255, 255, 255, 0.664),rgb(198, 198, 198),rgba(255, 255, 255, 0.824), rgba(255, 255, 255, 0.824))';
-        eventsBoxObjectList[eventIndex].style.color = 'black';
-        eventsBoxObjectList[eventIndex].style.backgroundColor = 'none';
+
+        eventsBoxObjectList[i].style.backgroundColor = 'rgba(255,255,255,0.4)';
 
     }
 
-    eventsBoxObjectList[eventIndex].style.backgroundImage = 'none';
-    eventsBoxObjectList[eventIndex].style.backgroundColor = 'black';
-    eventsBoxObjectList[eventIndex].style.color = 'azure';
+
+    eventsBoxObjectList[eventIndex].style.backgroundColor = 'azure';
+    
 
 
 

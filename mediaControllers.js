@@ -22,6 +22,29 @@ function howItWorksVideo(){
 
 }
 
+
+let changedVideoSource = false;
+
+function howItWorksVideoHeader(){
+
+  document.getElementById('video').src = './assets/videos/howItWorks.mp4';
+
+  changedVideoSource = true;
+
+}
+
+function mainVideoBack(){
+
+  if (changedVideoSource === true) {
+
+    document.getElementById('video').src = './assets/videos/CodingDojoRecifeTheCrabAct.mp4';
+    changedVideoSource = false;
+
+
+  }
+
+}
+
 function videoStop(){
 
   document.getElementById('howItWorks-video').pause();
